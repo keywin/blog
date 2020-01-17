@@ -85,7 +85,7 @@ export default {
 				line-height: 1.8;
 				margin-bottom: .05rem;
 				font-size: .28rem;
-				img.l{
+				img{
 					width: 2.3rem;
 					height: 1.6rem;
 				}

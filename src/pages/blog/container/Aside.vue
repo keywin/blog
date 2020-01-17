@@ -26,6 +26,9 @@
 			<dd class="nav-item">数据库</dd>
 			<dd class="nav-item">express</dd>
 			<dt class="nav-item nav-title">感想</dt>
+			<dd class="nav-item">2019-12-31</dd>
+			<dd class="nav-item">2020-01-01</dd>
+			<dd class="nav-item">2020-01-17</dd>
 			<dt class="nav-item nav-title">工具类</dt>
 			<dd class="nav-item">svn</dd>
 			<dd class="nav-item">git</dd>
@@ -72,6 +75,7 @@ export default {
 			.nav-title{
 				padding: .2rem 0 0 .2rem;
 				border-top: 0;
+				font-weight: bold;
 			}
 		}
 	}
@@ -98,6 +102,7 @@ export default {
 			.nav-title{
 				padding: 10px 0 0 10px;
 				border-top: 0;
+				font-weight: bold;
 			}
 		}
 	}
