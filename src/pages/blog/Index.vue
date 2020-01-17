@@ -88,7 +88,7 @@ export default {
 				},
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_06.jpg')
+					img: require('@/assets/img/blog/pic/swiper_06.jpeg')
 				}
 			],
 			swiperSlides: [1, 2, 3, 4, 5, 6],
