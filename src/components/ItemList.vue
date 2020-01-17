@@ -11,7 +11,10 @@
 			<li v-for="(item, i) in 2" :key="i" class="list-item fadeIn animated">
 				<i class="list-line"></i>
 				<h3 class="list-title">林州别论或今秋</h3>
-				<div class="list-cont">尽管我在VS Code中经常使用许多快捷方式，以下快捷方式可能会派上用场，但我经常忘记它们的存在。我制作了一些GIF，以便更好地记住它们。也许这里面也有一些快捷方式你也不记得了，但是却很有用。</div>
+				<div class="list-cont">
+					<p>尽管我在VS Code中经常使用许多快捷方式，以下快捷方式可能会派上用场，但我经常忘记它们的存在。我制作了一些GIF，以便更好地记住它们。也许这里面也有一些快捷方式你也不记得了，但是却很有用。</p>
+					<img src="@/assets/img/blog/pic/swiper_0.jpg" alt="" class="l">
+				</div>
 				<div class="list-more">阅读全文</div>
 			</li>
 		</ul>
@@ -82,6 +85,10 @@ export default {
 				line-height: 1.8;
 				margin-bottom: .05rem;
 				font-size: .28rem;
+				img.l{
+					width: 2.3rem;
+					height: 1.6rem;
+				}
 			}
 			.list-more{
 				margin-top: .2rem;
@@ -122,6 +129,14 @@ export default {
 				line-height: 1.8;
 				margin-bottom: 10px;
 				font-size: 14px;
+				display: flex;
+				p{
+					flex: 1;
+				}
+				img.l{
+					width: 130px;
+					height: 80px;
+				}
 			}
 			.list-more{
 				color: orangered;
