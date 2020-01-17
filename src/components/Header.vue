@@ -44,7 +44,6 @@ export default {
 		justify-content:space-between;
 		height: 1.6rem;
 		border-bottom: .01rem solid #dcdddd;
-		background: #dcdddd;
 		p{
 			width: .6rem;
 			height: .6rem;

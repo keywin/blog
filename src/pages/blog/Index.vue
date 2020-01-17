@@ -21,13 +21,12 @@
 				<div class="swiper-pagination" slot="pagination"></div>
 			</swiper>
 		</div>
-		
-		<!-- <div class="index-contens">
+		<div class="index-contens">
 			<kw-aside></kw-aside>
 			<div class="content">
-				<kw-item-list></kw-item-list>
+				<kw-item-list v-for="(item, i) in 2" :key="i"></kw-item-list>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </template>
 <script>
@@ -35,7 +34,6 @@ import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import kwAside from './container/Aside'
 import kwItemList from '../../components/ItemList'
-var that;
 export default {
   name: "Blog",
   data() {
@@ -122,15 +120,16 @@ export default {
 		display: none;
 	}
 	.swiperFoo{
-		padding: .3rem;
+		margin-bottom: .6rem;
 		box-sizing: border-box;
 		.swiperOptionMin{
 			width: 100%;
-			height: 4rem;
-			.swiper-slide{
-				
-			}
+			height: 3rem;
 		}
+	}
+	.index-contens{
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
 
