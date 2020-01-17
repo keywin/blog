@@ -55,6 +55,7 @@ export default {
 @media only screen and (max-width: 600px) {
 	.aside{
 		width: 100%;
+		background: #fff;
 		.nav{
 			.nav-item{
 				line-height: .88rem;
@@ -79,6 +80,8 @@ export default {
 @media only screen and (min-width: 600px) {
 	.aside{
 		width: 300px;
+		background: #fff;
+		box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
 		.nav{
 			.nav-item{
 				line-height: 44px;
