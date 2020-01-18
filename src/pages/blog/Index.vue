@@ -25,6 +25,8 @@
 			<kw-aside></kw-aside>
 			<div class="content">
 				<kw-item-list v-for="(item, i) in 2" :key="i"></kw-item-list>
+				<kw-img-item-list></kw-img-item-list>
+				<kw-txt-item-list></kw-txt-item-list>
 			</div>
 		</div>
 	</div>
@@ -34,6 +36,8 @@ import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import kwAside from './container/Aside'
 import kwItemList from '../../components/ItemList'
+import kwImgItemList from '../../components/ImgItemList'
+import kwTxtItemList from '../../components/TxtItemList'
 export default {
   name: "Blog",
   data() {
@@ -103,7 +107,9 @@ export default {
 		swiper,
 		swiperSlide,
 		kwAside,
-		kwItemList
+		kwItemList,
+		kwImgItemList,
+		kwTxtItemList
 	},
   created() {},
   methods: {},

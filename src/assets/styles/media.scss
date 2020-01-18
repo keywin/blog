@@ -25,6 +25,14 @@
 			cursor: pointer;
 		}
 	}
+	.kw-tag{
+		display: inline-block;
+		height: .48rem;
+		line-height: .52rem;
+		padding: 0 .2rem;
+		font-size: .24rem;
+		border: .02rem solid #eee;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -46,6 +54,14 @@
 			background-size: 20px;
 			cursor: pointer;
 		}
+	}
+	.kw-tag{
+		display: inline-block;
+		height: 24px;
+		line-height: 24px;
+		padding: 0 10px;
+		font-size: 12px;
+		border: 1px solid #eee;
 	}
 }
 
