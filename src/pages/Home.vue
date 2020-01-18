@@ -5,12 +5,12 @@
 -->
 <template>
   <div class="home">
-		<kwHeade></kwHeade>
+		
 		<router-view />
 	</div>
 </template>
 <script>
-import kwHeade from '@/components/Header.vue'
+
 export default {
   name: "Home",
   data() {
@@ -20,7 +20,7 @@ export default {
   watch: {},
   computed: {},
   components: {
-		kwHeade
+		
 	},
   created() {},
   methods: {},

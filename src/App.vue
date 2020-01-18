@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <router-view/>
-    <div class="first-mark" v-if="isShow">
+    <!-- <div class="first-mark" v-if="isShow">
       今天是2019年12月31日, 节日快乐
-    </div>
+    </div> -->
   </div>
 </template>
 

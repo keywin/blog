@@ -10,7 +10,7 @@
 			<img src="@/assets/img/blog/pic/微信图片_20200116111632.png" alt="" class="l">
 			<img src="https://otonarisan.info/wp/wp-content/themes/otonarisan/assets/img/common/img_kinjiro.png" alt="" class="r">
 		</h2>
-		<p class="more"></p>
+		<p class="more" @click="showAsideClick"></p>
 	</div>
 </template>
 <script>
@@ -28,7 +28,11 @@ export default {
 		
 	},
   created() {},
-  methods: {},
+  methods: {
+	  showAsideClick() {
+		  this.$store.commit('CHANGE_AISDESTATE', true)
+	  }
+  },
   mounted() {
 		
 	},

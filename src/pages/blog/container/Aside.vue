@@ -4,35 +4,35 @@
 -- @script: newPage
 -->
 <template>
-  <div class="aside">
+  <div class="aside" :class="{ active: $store.state.VUEX_ASIDE.vuex_asideState }">
 		<div class="input-search">
 			<input type="text" placeholder="記事を検索">
 			<i></i>
 		</div>
 		<dl class="nav">
-			<dt class="nav-item nav-title">vue-cli2+</dt>
-			<dd class="nav-item">vuex及模块化</dd>
-			<dd class="nav-item">Api模块化</dd>
-			<dd class="nav-item">路由拦截与懒加载</dd>
-			<dd class="nav-item">
+			<dt @click="hideAsideClick" class="nav-item nav-title">vue-cli2+</dt>
+			<dd @click="hideAsideClick" class="nav-item">vuex及模块化</dd>
+			<dd @click="hideAsideClick" class="nav-item">Api模块化</dd>
+			<dd @click="hideAsideClick" class="nav-item">路由拦截与懒加载</dd>
+			<dd @click="hideAsideClick" class="nav-item">
 				Axios使用与状态码管理
 				<img src="https://otonarisan.info/wp/wp-content/uploads/2017/11/hyoushivol15.jpg" alt="">
 			</dd>
-			<dt class="nav-item nav-title">Sass</dt>
-			<dd class="nav-item">引入sass</dd>
-			<dd class="nav-item">配置与修改</dd>
-			<dd class="nav-item">常用方法及案例</dd>
-			<dt class="nav-item nav-title">后端</dt>
-			<dd class="nav-item">数据库</dd>
-			<dd class="nav-item">express</dd>
-			<dt class="nav-item nav-title">感想</dt>
-			<dd class="nav-item">2019-12-31</dd>
-			<dd class="nav-item">2020-01-01</dd>
-			<dd class="nav-item">2020-01-17</dd>
-			<dt class="nav-item nav-title">工具类</dt>
-			<dd class="nav-item">svn</dd>
-			<dd class="nav-item">git</dd>
-			<dd class="nav-item">vscode</dd>
+			<dt @click="hideAsideClick" class="nav-item nav-title">Sass</dt>
+			<dd @click="hideAsideClick" class="nav-item">引入sass</dd>
+			<dd @click="hideAsideClick" class="nav-item">配置与修改</dd>
+			<dd @click="hideAsideClick" class="nav-item">常用方法及案例</dd>
+			<dt @click="hideAsideClick" class="nav-item nav-title">后端</dt>
+			<dd @click="hideAsideClick" class="nav-item">数据库</dd>
+			<dd @click="hideAsideClick" class="nav-item">express</dd>
+			<dt @click="hideAsideClick" class="nav-item nav-title">感想</dt>
+			<dd @click="hideAsideClick" class="nav-item">2019-12-31</dd>
+			<dd @click="hideAsideClick" class="nav-item">2020-01-01</dd>
+			<dd @click="hideAsideClick" class="nav-item">2020-01-17</dd>
+			<dt @click="hideAsideClick" class="nav-item nav-title">工具类</dt>
+			<dd @click="hideAsideClick" class="nav-item">svn</dd>
+			<dd @click="hideAsideClick" class="nav-item">git</dd>
+			<dd @click="hideAsideClick" class="nav-item">vscode</dd>
 		</dl>
 	</div>
 </template>
@@ -42,12 +42,18 @@ export default {
   data() {
     return {};
   },
-  props: [],
+  props: {
+	  
+  },
   watch: {},
   computed: {},
   components: {},
   created() {},
-  methods: {},
+  methods: {
+	  hideAsideClick() {
+		  this.$store.commit('CHANGE_AISDESTATE', false)
+	  }
+  },
   mounted() {},
   updated() {},
   destroyed() {}
@@ -57,8 +63,18 @@ export default {
 /* 小屏 */
 @media only screen and (max-width: 600px) {
 	.aside{
+		position: fixed;
+		left: 100%;
+		top: 0;
 		width: 100%;
+		height: 100%;
 		background: #fff;
+		z-index: 999999999;
+		transition: left .4s cubic-bezier(.6,0,.2,1) 0s;
+		overflow-y: scroll;
+		&.active{
+			left: 0;
+		}
 		.nav{
 			.nav-item{
 				line-height: .88rem;

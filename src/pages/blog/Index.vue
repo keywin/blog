@@ -5,6 +5,7 @@
 -->
 <template>
   <div class="blog">
+	  	<kwHeade></kwHeade>
 		<!-- 大屏 -->
 		<swiper :options="swiperOptionMax" class="swiperOptionMax">
 			<swiper-slide v-for="(item, i) in swiperImg" :key="i">
@@ -22,7 +23,7 @@
 			</swiper>
 		</div>
 		<div class="index-contens">
-			<kw-aside></kw-aside>
+			<kw-aside :isShowAside="isShowAside"></kw-aside>
 			<div class="content">
 				<kw-item-list v-for="(item, i) in 2" :key="i"></kw-item-list>
 				<kw-img-item-list></kw-img-item-list>
@@ -34,6 +35,8 @@
 <script>
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
+import kwHeade from '@/components/Header.vue'
 import kwAside from './container/Aside'
 import kwItemList from '../../components/ItemList'
 import kwImgItemList from '../../components/ImgItemList'
@@ -96,6 +99,7 @@ export default {
 				}
 			],
 			swiperSlides: [1, 2, 3, 4, 5, 6],
+			isShowAside: false
 		};
   },
   props: [],
@@ -104,6 +108,7 @@ export default {
 	},
   computed: {},
   components: {
+	  	kwHeade,
 		swiper,
 		swiperSlide,
 		kwAside,
