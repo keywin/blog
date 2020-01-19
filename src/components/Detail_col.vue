@@ -19,7 +19,7 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				今天 / 2020.01.18
+				<span>今天 / 2020.01.18</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
@@ -49,8 +49,10 @@ export default {
 /* 小屏 */
 @media only screen and (max-width: 600px) {
 	.detail{
+		position: relative;
 		padding: .3rem;
 		background: #fff;
+		transition: all .3s;
 		.titl{
 			position: relative;
 			height: 1.12rem;
@@ -59,31 +61,6 @@ export default {
 			font-size: .4rem;
 			font-weight: 700;
 			color: #000;
-				&:before{
-				content: '';
-				display: none;
-				// position: absolute;
-				// left: 50%;
-				// top: 0;
-				// transform: translateX(-50%); 
-				// width: 0;
-				// height: 0;
-				// border-style: solid;
-				// border-width: 0 0.33rem 0.57.2rem 0.33rem;
-				// border-color: transparent transparent #f1f1f1 transparent;
-			}
-			&:after{
-				content: "";
-				display: none;
-				// position: absolute;
-				// background-color: #f1f1f1;
-				// width: .56rem;
-				// height: .56rem;
-				// border-radius: 50%;
-				// left: 50%;
-				// bottom: 0;
-				// transform: translateX(-50%);
-			}
 		}
 		.imgFoo{
 			max-height: 8rem;
@@ -105,11 +82,35 @@ export default {
 				font-size: .32rem;
 			}
 		}
+		.detailFooter{
+			padding-top: .4rem;
+			p{
+				font-size: .26rem;
+				color: #000;
+				span{
+					line-height: 1.8;
+				}
+				i{
+					display: inline-block;
+					width: .28rem;
+					height: .28rem;
+					background: url(~@/assets/img/icon/date.png) no-repeat;
+					background-size: 100%;
+				}
+				&.biaoqian{
+					i{
+						background: url(~@/assets/img/icon/biaoqian.png) no-repeat;
+						background-size: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.detail{
+		position: relative;
 		max-width: 960px;
 		margin: 0 auto;
 		padding: 30px 20px;
