@@ -5,7 +5,6 @@
 -->
 <template>
   <div class="home">
-		
 		<router-view />
 	</div>
 </template>
@@ -30,4 +29,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.home{
+	position: relative;
+	z-index: 1;
+}
 </style>
