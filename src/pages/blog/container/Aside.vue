@@ -131,9 +131,6 @@ export default {
 				padding-left: .6rem;
 				border-top: .02rem solid #eee;
 				font-size: .36rem;
-				&:hover{
-
-				}
 				img{
 					display: block;
 					width: 2.7rem;
