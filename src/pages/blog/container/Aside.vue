@@ -9,38 +9,83 @@
 			<input type="text" placeholder="記事を検索">
 			<i></i>
 		</div>
-		<dl class="nav">
-			<dt @click="hideAsideClick" class="nav-item nav-title">vue-cli2+</dt>
-			<dd @click="hideAsideClick" class="nav-item">vuex及模块化</dd>
-			<dd @click="hideAsideClick" class="nav-item">Api模块化</dd>
-			<dd @click="hideAsideClick" class="nav-item">路由拦截与懒加载</dd>
-			<dd @click="hideAsideClick" class="nav-item">
-				Axios使用与状态码管理
-				<img src="https://otonarisan.info/wp/wp-content/uploads/2017/11/hyoushivol15.jpg" alt="">
-			</dd>
-			<dt @click="hideAsideClick" class="nav-item nav-title">Sass</dt>
-			<dd @click="hideAsideClick" class="nav-item">引入sass</dd>
-			<dd @click="hideAsideClick" class="nav-item">配置与修改</dd>
-			<dd @click="hideAsideClick" class="nav-item">常用方法及案例</dd>
-			<dt @click="hideAsideClick" class="nav-item nav-title">后端</dt>
-			<dd @click="hideAsideClick" class="nav-item">数据库</dd>
-			<dd @click="hideAsideClick" class="nav-item">express</dd>
-			<dt @click="hideAsideClick" class="nav-item nav-title">感想</dt>
-			<dd @click="hideAsideClick" class="nav-item">2019-12-31</dd>
-			<dd @click="hideAsideClick" class="nav-item">2020-01-01</dd>
-			<dd @click="hideAsideClick" class="nav-item">2020-01-17</dd>
-			<dt @click="hideAsideClick" class="nav-item nav-title">工具类</dt>
-			<dd @click="hideAsideClick" class="nav-item">svn</dd>
-			<dd @click="hideAsideClick" class="nav-item">git</dd>
-			<dd @click="hideAsideClick" class="nav-item">vscode</dd>
-		</dl>
+		<div class="nav">
+			<dl v-for="item in asideList" :key="item.id">
+				<dt @click="hideAsideClick" class="nav-item nav-title">{{ item.titl }}</dt>
+					<dd @click="hideAsideClick" class="nav-item" v-for="item2 in item.children" :key="item2.id">
+						{{ item2.titl }}
+						<img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=d73d15e55dfbb2fb342b5f1477714799/c8177f3e6709c93dfe1c134f973df8dcd000549f.jpg" v-if="item2.img" />
+					</dd>
+			</dl>
+		</div>
 	</div>
 </template>
 <script>
 export default {
   name: "Aside",
   data() {
-    return {};
+    return {
+			asideList: [
+				{
+					titl: '前端学习',
+					id: '1',
+					children: [
+						{ titl: 'vuex及模块化', id: '1-1' },
+						{ titl: 'Axios封装及拦截器、状态管理', id: '1-2' },
+						{ titl: 'Api模块化及按文件自动全局引入', id: '1-3' },
+						{ titl: 'sass配置及换肤', id: '1-4' },
+						{ titl: 'npm发布插件', id: '1-5' },
+						{ titl: 'vue常见报错及处理', id: '1-6' },
+						{ titl: 'tool.js', id: '1-7' },
+						{ titl: 'flex说明与示例', id: '1-8' },
+						{ titl: 'Es6总结与实例', id: '1-9' },
+						{ titl: '常用正则', id: '1-10' },
+						{ titl: 'if语句优化', id: '1-11' },
+						{ titl: '小程序自学', id: '1-12' },
+					]
+				},
+				{
+					titl: '后端cv型',
+					id: '2',
+					children: [
+						{ titl: 'express启动', id: '2-1' }
+					]
+				},
+				{
+					titl: '工具类',
+					id: '3',
+					children: [
+						{ titl: 'https://github.com', id: '3-1' },
+						{ titl: 'TortoiseSVN', id: '3-2' },
+						{ titl: 'git配置及基础命令', id: '3-3' },
+						{ titl: 'Hbuilder打包', id: '3-4' },
+						{ titl: 'Hbuilder快捷键', id: '3-5' },
+						{ titl: 'vscode快捷键', id: '3-6' },
+						{ titl: 'vscode常用插件', id: '3-7' },
+						{ titl: 'Markdown语法', id: '3-8' },
+					]
+				},
+				{
+					titl: '随心杂记',
+					id: '4',
+					children: [
+						{ titl: '2019-12-25', id: '4-1' },
+						{ titl: '共病文库', id: '4-2' },
+						{ titl: '年末总结', id: '4-3' },
+					]
+				},
+				{
+					titl: '动漫',
+					id: '5',
+					children: [
+						{ titl: '火影忍者', id: '5-1' },
+						{ titl: '我想吃掉你的胰脏', id: '5-2' },
+						{ titl: '夏目友人帐', id: '5-3' },
+						{ titl: '宫崎骏系列', id: '5-4' },
+					]
+				}
+			]
+		};
   },
   props: {
 	  
@@ -81,6 +126,9 @@ export default {
 				padding-left: .6rem;
 				border-top: .02rem solid #eee;
 				font-size: .36rem;
+				&:hover{
+
+				}
 				img{
 					display: block;
 					width: 2.7rem;
@@ -102,12 +150,28 @@ export default {
 		width: 300px;
 		background: #fff;
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+		.input-search{
+			border-right: 0;
+			border-left: 0;
+			input{
+				background: #f1f1f1;
+			}
+			i{
+				background-color: #f1f1f1;
+			}
+		}
 		.nav{
 			.nav-item{
-				line-height: 44px;
-				padding-left: 30px;
+				// line-height: 44px;
+				padding: 10px 0 10px 30px;
 				border-top: 1px solid #eee;
-				font-size: 18px;
+				font-size: 16px;
+				color: #333;
+				cursor: pointer;
+				opacity: .8;
+				&:hover{
+					opacity: 1;
+				}
 				img{
 					display: block;
 					width: 135px;
@@ -119,6 +183,7 @@ export default {
 				padding: 10px 0 0 10px;
 				border-top: 0;
 				font-weight: bold;
+				opacity: 1;
 			}
 		}
 	}

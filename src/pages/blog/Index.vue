@@ -9,7 +9,7 @@
 		<!-- 大屏 -->
 		<swiper :options="swiperOptionMax" class="swiperOptionMax">
 			<swiper-slide v-for="(item, i) in swiperImg" :key="i">
-				<img :src="item.img" alt="" width="100%" height="100%">
+				<img :src="item.img" alt="" width="100%" height="100%" style="object-fit: cover;">
 			</swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
@@ -17,7 +17,7 @@
 		<div class="swiperFoo">
 			<swiper :options="swiperOptionMin" class="swiperOptionMin">
 				<swiper-slide v-for="(item, i) in swiperImg" :key="i">
-					<img :src="item.img" alt="" width="100%" height="100%">
+					<img :src="item.img" alt="" width="100%" height="100%" style="object-fit: cover;">
 				</swiper-slide>
 				<div class="swiper-pagination" slot="pagination"></div>
 			</swiper>
@@ -52,7 +52,7 @@ export default {
 				loop : true,
 				speed:800,
 				autoplay: { // 自动播放
-					delay: 8000,
+					delay: 3000,
 					disableOnInteraction: false,
 				},
 				pagination: {
@@ -153,7 +153,7 @@ export default {
 		display: block;
 		max-width: 900px;
 		height: 154px;
-		margin: 30px auto 0;
+		margin: 30px auto 20px;
 		padding: 0 10px;
 		.swiper-wrapper{
 			.swiper-slide{
