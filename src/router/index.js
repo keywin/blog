@@ -18,6 +18,11 @@ export default new Router({
 					path: '/blog',
 					name: 'Blog',
 					component: resolve => require(['@/pages/blog/Index.vue'], resolve),
+				},
+				{
+					path: '/blog/detail_col',
+					name: 'Detail_col',
+					component: resolve => require(['@/components/Detail_col.vue'], resolve),
 				}
 			]
 		}
