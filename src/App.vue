@@ -38,7 +38,7 @@ class Boom {
         // 当前计算为1，用于判断是否会超出阀值
         this.nowNum = 1
         // 透明度
-        this.alpha = .1
+        this.alpha = .5
         // 重力系数
         this.gravity = 0
         this.decay = 0.015
@@ -58,7 +58,7 @@ class Boom {
           context.moveTo(this.nowLocation.x, this.nowLocation.y) 
         }
          
-        context.lineWidth = 3
+        context.lineWidth = 1
         context.lineCap = 'round'
         context.lineTo(this.nowLocation.x, this.nowLocation.y)
         // 设置由透明度减小产生的渐隐效果，看起来没这么突兀
