@@ -150,7 +150,7 @@ export default {
 @media only screen and (min-width: 600px) {
 	.aside{
 		width: 300px;
-		background: #fff;
+		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
 		.input-search{
 			border-right: 0;

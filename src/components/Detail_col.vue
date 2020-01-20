@@ -55,7 +55,7 @@ export default {
 @media only screen and (max-width: 600px) {
 	.detail{
 		padding: .3rem;
-		background: #fff;
+		background: rgba(255,255,255,.5);
 		transition: all .3s;
 		.goBack{
 			position: fixed;
@@ -64,7 +64,7 @@ export default {
 			padding: .3rem;
 			font-size: .4rem;
 			color: #000;
-			background: rgba(255,255,255,.9);
+			background: rgba(255,255,255,.5);
 			box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
 		}
 		.titl{
@@ -128,7 +128,7 @@ export default {
 		max-width: 960px;
 		margin: 0 auto;
 		padding: 30px 20px;
-		background: #fff;
+		background: rgba(255,255,255,.5);
 		.goBack{
 			position: fixed;
 			right: 30px;
@@ -136,7 +136,7 @@ export default {
 			padding: 20px;
 			font-size: 20px;
 			color: #000;
-			background: rgba(255,255,255,.9);
+			background: rgba(255,255,255,.5);
 			box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
 			cursor: pointer;
 		}

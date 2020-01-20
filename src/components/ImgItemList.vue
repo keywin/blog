@@ -46,7 +46,7 @@ export default {
 	.itemList{
 		margin: 0 .3rem .4rem;
 		padding: .3rem;
-		background: #fff;
+		background: rgba(255,255,255,.5);
 		box-shadow: 0 .04rem .24rem 0 rgba(0,0,0,.1);
 		.ul-title{
 			height: 1.6rem;
@@ -73,7 +73,7 @@ export default {
 		margin-bottom: 20px;
 		padding: 30px;
 		color: #000;
-		background: #fff;
+		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
 		.ul-title{
 			width: 100%;
