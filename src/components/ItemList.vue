@@ -18,6 +18,7 @@
 				<div class="list-more">阅读全文</div>
 			</li>
 		</ul>
+		<div class="more" @click="goListPage(listData.id)">查看更多>></div>
 	</div>
 </template>
 <script>
@@ -30,13 +31,16 @@ export default {
   watch: {},
   computed: {
 	  listData_show: function () {
-		  console.log(this.listData)
 		  return this.listData.children.filter(item=>item.scription)
 	  }
   },
   components: {},
   created() {},
-  methods: {},
+  methods: {
+	  goListPage(id) {
+		  this.$router.push({path: '/blog/listpages', query: {id}})
+	  }
+  },
   mounted() {
 		// lazyload()
 
@@ -101,8 +105,18 @@ export default {
 				font-size: .32rem;
 			}
 		}
+		.more{
+			text-align: center;
+			font-size: .24rem;
+			margin-top: .2rem;
+			color: #444;
+			cursor: pointer;
+			transition: opacity .5s;
+			&:hover{
+				opacity: .8;
+			}
+		}
 	}
-	
 }
 /* 大屏 */
 @media only screen and (min-width: 600px) {
@@ -149,7 +163,17 @@ export default {
 				cursor: pointer;
 			}
 		}
-		
+		.more{
+			text-align: center;
+			font-size: 12px;
+			margin-top: 20px;
+			color: #444;
+			cursor: pointer;
+			transition: opacity .5s;
+			&:hover{
+				opacity: .8;
+			}
+		}
 	}
 }
 </style>

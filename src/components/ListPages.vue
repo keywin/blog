@@ -5,14 +5,14 @@
 -->
 <template>
   <div class="listPages">
-		<div class="listItem" v-for="item in 4" :key="item">
-			<div class="post-letter">O</div>
-			<h3 class="titl">Oracle</h3>
+		<div class="listItem" v-for="(item, id) in listData.children" :key="id">
+			<div class="post-letter">{{ item.titl[0] }}</div>
+			<h3 class="titl">{{ item.titl }}</h3>
 			<div class="miaoshu">
 				作者: keywin / 发布于: 2019-12-21 / 本文属于: 前端 / 标签: 前端
 			</div>
 			<div class="cont">
-				工作知识点记录
+				{{ item.scription || '工作知识点记录' }}
 			</div>
 			<div class="detail">
 				<span>READ</span>
@@ -21,18 +21,28 @@
 	</div>
 </template>
 <script>
+import listData from "@/assets/json/blog/index.json"
 export default {
   name: "ListPages",
   data() {
-    return {};
+    return {
+		listData: {}
+	};
   },
   props: [],
   watch: {},
-  computed: {},
+  computed: {
+  },
   components: {},
-  created() {},
+  created() {
+	  this.$nextTick(() => {
+		  this.listData = listData.filter(item=>item.id==this.$route.query.id)[0]
+	  })
+  },
   methods: {},
-  mounted() {},
+  mounted() {
+	
+  },
   updated() {},
   destroyed() {}
 };
