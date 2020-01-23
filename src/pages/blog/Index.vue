@@ -25,7 +25,7 @@
 		<div class="index-contens">
 			<kw-aside :isShowAside="isShowAside"></kw-aside>
 			<div class="content">
-				<kw-item-list v-for="(item, i) in 2" :key="i"></kw-item-list>
+				<kw-item-list v-for="(item, i) in indexJson1" :key="i" :listData="item"></kw-item-list>
 				<kw-img-item-list></kw-img-item-list>
 				<kw-txt-item-list></kw-txt-item-list>
 			</div>
@@ -41,6 +41,8 @@ import kwAside from './container/Aside'
 import kwItemList from '../../components/ItemList'
 import kwImgItemList from '../../components/ImgItemList'
 import kwTxtItemList from '../../components/TxtItemList'
+
+import indexJson from "@/assets/json/blog/index.json"
 export default {
   name: "Blog",
   data() {
@@ -99,7 +101,8 @@ export default {
 				}
 			],
 			swiperSlides: [1, 2, 3, 4, 5, 6],
-			isShowAside: false
+			isShowAside: false,
+			indexJson1: indexJson.slice(0, 3)
 		};
   },
   props: [],

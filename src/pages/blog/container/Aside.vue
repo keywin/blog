@@ -22,70 +22,12 @@
 	</div>
 </template>
 <script>
+import asideList from "@/assets/json/blog/index.json"
 export default {
   name: "Aside",
   data() {
     return {
-			asideList: [
-				{
-					titl: '前端学习',
-					id: '1',
-					children: [
-						{ titl: 'vuex及模块化', id: '1-1', linkTo: "aaa" },
-						{ titl: 'Axios封装及拦截器、状态管理', id: '1-2', linkTo: "aaa" },
-						{ titl: 'Api模块化及按文件自动全局引入', id: '1-3', linkTo: "aaa" },
-						{ titl: 'sass配置及换肤', id: '1-4', linkTo: "aaa" },
-						{ titl: 'npm发布插件', id: '1-5', linkTo: "aaa" },
-						{ titl: 'vue常见报错及处理', id: '1-6', linkTo: "aaa" },
-						{ titl: 'tool.js', id: '1-7', linkTo: "aaa" },
-						{ titl: 'flex说明与示例', id: '1-8', linkTo: "aaa" },
-						{ titl: 'Es6总结与实例', id: '1-9', linkTo: "aaa" },
-						{ titl: '常用正则', id: '1-10', linkTo: "aaa" },
-						{ titl: 'if语句优化', id: '1-11', linkTo: "aaa" },
-						{ titl: '小程序自学', id: '1-12', linkTo: "aaa" },
-					]
-				},
-				{
-					titl: '后端cv型',
-					id: '2',
-					children: [
-						{ titl: 'express启动', id: '2-1, linkTo: "aaa"' }
-					]
-				},
-				{
-					titl: '工具类',
-					id: '3',
-					children: [
-						{ titl: 'https://github.com', id: '3-1', linkTo: "https://github.com" },
-						{ titl: 'TortoiseSVN', id: '3-2', linkTo: "aaa" },
-						{ titl: 'git配置及基础命令', id: '3-3', linkTo: "aaa" },
-						{ titl: 'Hbuilder打包', id: '3-4', linkTo: "aaa" },
-						{ titl: 'Hbuilder快捷键', id: '3-5', linkTo: "aaa" },
-						{ titl: 'vscode快捷键', id: '3-6', linkTo: "aaa" },
-						{ titl: 'vscode常用插件', id: '3-7', linkTo: "aaa" },
-						{ titl: 'Markdown语法', id: '3-8', linkTo: "aaa" },
-					]
-				},
-				{
-					titl: '随心杂记',
-					id: '4',
-					children: [
-						{ titl: '2019-12-25', id: '4-1', linkTo: "aaa" },
-						{ titl: '共病文库', id: '4-2', linkTo: "aaa" },
-						{ titl: '年末总结', id: '4-3', linkTo: "aaa" },
-					]
-				},
-				{
-					titl: '动漫',
-					id: '5',
-					children: [
-						{ titl: '火影忍者', id: '5-1', linkTo: "aaa" },
-						{ titl: '我想吃掉你的胰脏', id: '5-2', linkTo: "aaa" },
-						{ titl: '夏目友人帐', id: '5-3', linkTo: "aaa" },
-						{ titl: '宫崎骏系列', id: '5-4', linkTo: "aaa" },
-					]
-				}
-			]
+			asideList
 		};
   },
   props: {
@@ -104,7 +46,8 @@ export default {
 		  this.$store.commit('CHANGE_AISDESTATE', false)
 	  }
   },
-  mounted() {},
+  mounted() {
+  },
   updated() {},
   destroyed() {}
 };
