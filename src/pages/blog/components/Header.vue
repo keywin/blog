@@ -53,11 +53,11 @@ export default {
 			height: .6rem;
 			margin: .5rem .2rem 0;
 			&.search{
-				background: url('../assets/img/icon/search.svg') no-repeat center;
+				background: url('~@/assets/img/icon/search.svg') no-repeat center;
 				background-size: 100%;
 			}
 			&.more{
-				background: url('../assets/img/icon/more.svg') no-repeat center;
+				background: url('~@/assets/img/icon/more.svg') no-repeat center;
 				background-size: 100%;
 			}
 		}

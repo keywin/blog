@@ -22,12 +22,12 @@ export default new Router({
 				{
 					path: '/blog/detail_col',
 					name: 'Detail_col',
-					component: resolve => require(['@/components/Detail_col.vue'], resolve),
+					component: resolve => require(['@/pages/blog/Detail_col.vue'], resolve),
 				},
 				{
 					path: '/blog/listpages',
 					name: 'Detail_col',
-					component: resolve => require(['@/components/ListPages.vue'], resolve),
+					component: resolve => require(['@/pages/blog/ListPages.vue'], resolve),
 				}
 			]
 		}

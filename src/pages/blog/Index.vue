@@ -36,11 +36,11 @@
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
-import kwHeade from '@/components/Header.vue'
-import kwAside from './container/Aside'
-import kwItemList from '../../components/ItemList'
-import kwImgItemList from '../../components/ImgItemList'
-import kwTxtItemList from '../../components/TxtItemList'
+import kwHeade from '@/pages/blog/components/Header'
+import kwAside from '@/pages/blog/components/Aside'
+import kwItemList from '@/pages/blog/components/ItemList'
+import kwImgItemList from '@/pages/blog/components/ImgItemList'
+import kwTxtItemList from '@/pages/blog/components/TxtItemList'
 
 import indexJson from "@/assets/json/blog/index.json"
 export default {
@@ -49,7 +49,7 @@ export default {
     return {
 			swiperOptionMax: {
 				slidesPerView : 2, // 显示两张
-				slidesPerGroup : 2, // 每次切换1张
+				slidesPerGroup : 1, // 每次切换1张
 				spaceBetween: 20, // 间隔
 				loop : true,
 				speed:800,
@@ -154,9 +154,9 @@ export default {
 	}
 	.swiperOptionMax{
 		display: block;
-		max-width: 900px;
+		max-width: 960px;
 		height: 154px;
-		margin: 30px auto 20px;
+		margin: 30px auto 10px;
 		padding: 0 10px;
 		.swiper-wrapper{
 			.swiper-slide{
@@ -166,7 +166,7 @@ export default {
 			}
 		}
 		.swiper-pagination{
-			bottom: 0;
+			bottom: -2px;
 			/deep/ .swiper-pagination-bullet{
 				background: rgb(230, 230, 230);
 				opacity: 1;
