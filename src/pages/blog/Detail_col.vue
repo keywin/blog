@@ -5,7 +5,6 @@
 -->
 <template>
   <div class="detail detail_col">
-		<div class="goBack" @click="goBackClick">G<br/>O<br/>B<br/>A<br/>C<br/>K</div>
 		<h3 class="titl">今天是个好日子</h3>
 		<div class="imgFoo img_titl">
 			<img src="https://itukanokoto.com/wp/wp-content/uploads/2019/04/ieto19041802-534x667.jpg" alt="">
@@ -41,9 +40,6 @@ export default {
   components: {},
   created() {},
   methods: {
-		goBackClick() {
-			this.$router.go(-1)
-		}
 	},
   mounted() {},
   updated() {},
@@ -57,16 +53,6 @@ export default {
 		padding: .3rem;
 		background: rgba(255,255,255,.5);
 		transition: all .3s;
-		.goBack{
-			position: fixed;
-			right: .6rem;
-			top: .6rem;
-			padding: .3rem;
-			font-size: .4rem;
-			color: #000;
-			background: rgba(255,255,255,.5);
-			box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
-		}
 		.titl{
 			position: relative;
 			height: 1.12rem;
@@ -129,17 +115,6 @@ export default {
 		margin: 0 auto;
 		padding: 30px 20px;
 		background: rgba(255,255,255,.5);
-		.goBack{
-			position: fixed;
-			right: 30px;
-			top: 30px;
-			padding: 20px;
-			font-size: 20px;
-			color: #000;
-			background: rgba(255,255,255,.5);
-			box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
-			cursor: pointer;
-		}
 		.titl{
 			position: relative;
 			height: 92px;

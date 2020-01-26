@@ -72,7 +72,6 @@ export default {
 			.nav-item{
 				line-height: .88rem;
 				padding-left: .6rem;
-				border-top: .02rem solid #eee;
 				font-size: .36rem;
 				img{
 					display: block;
@@ -106,10 +105,10 @@ export default {
 			}
 		}
 		.nav{
+			padding: 0 20px;
 			.nav-item{
 				// line-height: 44px;
-				padding: 10px 0 10px 30px;
-				border-top: 1px solid #eee;
+				padding: 10px 0 10px 20px;
 				font-size: 16px;
 				color: #333;
 				cursor: pointer;
@@ -125,7 +124,7 @@ export default {
 				}
 			}
 			.nav-title{
-				padding: 10px 0 0 10px;
+				padding: 20px 0 0 0;
 				border-top: 0;
 				font-weight: bold;
 				opacity: 1;
