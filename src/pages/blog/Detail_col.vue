@@ -26,6 +26,23 @@
 				<span># 一日照片</span>
 			</p>
 		</div>
+		<!-- 使用指令 -->
+		<div v-highlight >
+			<pre>
+				<code class="js"><!-- 声明什么类型的代码 -->
+  // main.js
+  import store from './vuex/store.js./vuex/store.js./vuex/store.js./vuex/store.js'
+
+  new Vue({
+  	el: '#app',
+  	router,
+  	store, // 将store暴露出来
+  	components: { App },
+  	template: '&lt;App/&gt;'
+  })
+				</code>
+			</pre>
+		</div>
 	</div>
 </template>
 <script>
@@ -104,6 +121,10 @@ export default {
 					}
 				}
 			}
+		}
+		// coding
+		.hljs{
+			font-size: .24rem;
 		}
 	}
 }
@@ -187,6 +208,9 @@ export default {
 					}
 				}
 			}
+		}
+		.hljs{
+			font-size: 16px;
 		}
 	}
 }

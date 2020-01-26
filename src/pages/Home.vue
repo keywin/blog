@@ -17,7 +17,7 @@ export default {
   name: "Home",
   data() {
     return {
-      isShowBack: true
+      isShowBack: false
     };
   },
   props: [],
@@ -49,6 +49,7 @@ export default {
 .home{
 	position: relative;
 	z-index: 1;
+  overflow-x: hidden;
 }
 
 .goBack{
