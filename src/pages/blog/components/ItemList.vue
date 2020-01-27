@@ -13,7 +13,9 @@
 				<h3 class="list-title">{{ item.titl }}</h3>
 				<div class="list-cont">
 					<p>{{ item.scription }}</p>
-					<img :src="item.imgUrl" alt="" class="l" v-if="item.imgUrl">
+					<div class="images" v-viewer>
+						<img :src="item.imgUrl" alt="" class="l hand" v-if="item.imgUrl">
+					</div>
 				</div>
 				<div class="list-more" @click="goDetail(item.id)">阅读全文</div>
 			</li>
