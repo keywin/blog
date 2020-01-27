@@ -26,8 +26,8 @@
 			<kw-aside :isShowAside="isShowAside"></kw-aside>
 			<div class="content">
 				<kw-item-list v-for="(item, i) in indexJson1" :key="i" :listData="item"></kw-item-list>
-				<kw-img-item-list></kw-img-item-list>
-				<kw-txt-item-list></kw-txt-item-list>
+				<kw-img-item-list v-for="(item, i) in indexJson2" :key="i" :listData="item"></kw-img-item-list>
+				<kw-txt-item-list :listData="indexJson3[0]"></kw-txt-item-list>
 			</div>
 		</div>
 	</div>
@@ -102,7 +102,9 @@ export default {
 			],
 			swiperSlides: [1, 2, 3, 4, 5, 6],
 			isShowAside: false,
-			indexJson1: indexJson.slice(0, 3)
+			indexJson1: indexJson.slice(0, 3),
+			indexJson2: indexJson.slice(3, 5),
+			indexJson3: indexJson.slice(5, 6)
 		};
   },
   props: [],

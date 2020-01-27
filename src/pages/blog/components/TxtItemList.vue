@@ -5,15 +5,16 @@
 -->
 <template>
   <div class="itemList">
-		<h3 class="ul-title">夕朝<br />拾花</h3>
-		<!-- <h3 class="ul-title">朝花夕拾</h3> -->
+		<!-- <h3 class="ul-title">夕朝<br />拾花</h3> -->
+		<h3 class="ul-title">{{ listData.titl }}</h3>
 		<ul class="itemList_UL">
-			<li v-for="(item, i) in 4" :key="i" class="list-item fadeIn animated">
+			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated">
 				<i class="kw-tag">公告</i>
-				<span class="list-cont ellipsis">王国审计已上线,王国审计已上线,王国审计已上线</span>
-				<span class="list-date">2020-01-16</span>
+				<span class="list-cont ellipsis">{{ item.titl }}</span>
+				<span class="list-date">{{ item.update }}</span>
 			</li>
 		</ul>
+		<div class="more" @click="goListPage(listData.id)">查看更多>></div>
 	</div>
 </template>
 <script>
@@ -22,12 +23,17 @@ export default {
   data() {
     return {};
   },
-  props: [],
+  props: ['listData'],
   watch: {},
   computed: {},
   components: {},
   created() {},
-  methods: {},
+  methods: {
+		// 进入列表页
+	  goListPage(id) {
+		  this.$router.push({path: '/blog/listpages', query: {id}})
+		},
+	},
   mounted() {
 		
 	},
@@ -66,8 +72,18 @@ export default {
 				}
 			}
 		}
+		.more{
+			text-align: center;
+			font-size: .24rem;
+			margin-top: .2rem;
+			color: #444;
+			cursor: pointer;
+			transition: opacity .5s;
+			&:hover{
+				opacity: .8;
+			}
+		}
 	}
-	
 }
 /* 大屏 */
 @media only screen and (min-width: 600px) {
@@ -101,7 +117,17 @@ export default {
 				}
 			}
 		}
-		
+		.more{
+			text-align: center;
+			font-size: 12px;
+			margin-top: 20px;
+			color: #444;
+			cursor: pointer;
+			transition: opacity .5s;
+			&:hover{
+				opacity: .8;
+			}
+		}
 	}
 }
 </style>

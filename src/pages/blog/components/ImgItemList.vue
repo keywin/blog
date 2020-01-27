@@ -5,19 +5,20 @@
 -->
 <template>
   <div class="itemList">
-		<h3 class="ul-title">夕朝<br />拾花</h3>
-		<!-- <h3 class="ul-title">朝花夕拾</h3> -->
+		<!-- <h3 class="ul-title">夕朝<br />拾花</h3> -->
+		<h3 class="ul-title">{{ listData.titl }}</h3>
 		<ul class="itemList_UL">
-			<li v-for="(item, i) in 4" :key="i" class="list-item fadeIn animated">
+			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated">
 				<div class="imgFoo">
-					<img src="https://itukanokoto.com/wp/wp-content/uploads/2020/01/hibi20011701-677x452.jpg" alt="">
+					<img src="http://49.234.230.14/imgHost/blog/wx_20200127205845.jpg" alt="">
 				</div>
 				<div class="list-cont">
-					<span>我</span> / <i>2020.01.17</i>
-					<p>我看到了第一个日出</p>
+					<span>我</span> / <i>{{ item.update }}</i>
+					<p>{{ item.titl }}</p>
 				</div>
 			</li>
 		</ul>
+		<div class="more" @click="goListPage(listData.id)">查看更多>></div>
 	</div>
 </template>
 <script>
@@ -26,12 +27,17 @@ export default {
   data() {
     return {};
   },
-  props: [],
+  props: ['listData'],
   watch: {},
   computed: {},
   components: {},
   created() {},
-  methods: {},
+  methods: {
+		// 进入列表页
+	  goListPage(id) {
+		  this.$router.push({path: '/blog/listpages', query: {id}})
+		},
+	},
   mounted() {
 		
 	},
@@ -64,8 +70,18 @@ export default {
 				font-size: .28rem;
 			}
 		}
+		.more{
+			text-align: center;
+			font-size: .24rem;
+			margin-top: .2rem;
+			color: #444;
+			cursor: pointer;
+			transition: opacity .5s;
+			&:hover{
+				opacity: .8;
+			}
+		}
 	}
-	
 }
 /* 大屏 */
 @media only screen and (min-width: 600px) {
@@ -109,7 +125,17 @@ export default {
 				}
 			}
 		}
-		
+		.more{
+			text-align: center;
+			font-size: 12px;
+			margin-top: 20px;
+			color: #444;
+			cursor: pointer;
+			transition: opacity .5s;
+			&:hover{
+				opacity: .8;
+			}
+		}
 	}
 }
 </style>

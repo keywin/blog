@@ -92,17 +92,18 @@ export default {
 @media only screen and (min-width: 600px) {
 	.aside{
 		width: 300px;
+		margin-bottom: 20px;
 		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
 		.input-search{
 			border-right: 0;
 			border-left: 0;
-			input{
-				background: #f1f1f1;
-			}
-			i{
-				background-color: #f1f1f1;
-			}
+			// input{
+			// 	background: #f1f1f1;
+			// }
+			// i{
+			// 	background-color: #f1f1f1;
+			// }
 		}
 		.nav{
 			padding: 0 20px;
