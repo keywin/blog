@@ -25,8 +25,8 @@
 		<div class="index-contens">
 			<kw-aside :isShowAside="isShowAside"></kw-aside>
 			<div class="content">
-				<kw-item-list v-for="(item, i) in indexJson1" :key="i" :listData="item"></kw-item-list>
-				<kw-img-item-list v-for="(item, i) in indexJson2" :key="i" :listData="item"></kw-img-item-list>
+				<kw-item-list v-for="item in indexJson1" :key="item.id" :listData="item"></kw-item-list>
+				<kw-img-item-list v-for="item in indexJson2" :key="item.id" :listData="item"></kw-img-item-list>
 				<kw-txt-item-list :listData="indexJson3[0]"></kw-txt-item-list>
 			</div>
 		</div>
