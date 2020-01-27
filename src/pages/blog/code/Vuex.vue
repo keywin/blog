@@ -92,7 +92,7 @@
 		<p class="lineP">4. 使用</p>
 		<div v-highlight >
 			<pre>
-				<code class="js">
+				<code class="vue">
   <p v-html="'  {{ $store.state.userInfo.username }}'"></p>  
 				</code>
 			</pre>

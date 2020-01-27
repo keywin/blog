@@ -15,7 +15,7 @@
 				{{ item.scription || '工作知识点记录' }}
 			</div>
 			<div class="detail">
-				<span>READ</span>
+				<span @click="goDetail(item.id)">READ</span>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,15 @@ export default {
 		  this.listData = listData.filter(item=>item.id==this.$route.query.id)[0]
 	  })
   },
-  methods: {},
+  methods: {
+		// 进入详情页
+		goDetail(id) {
+			this.$router.push({
+				path: '/blog/detail_col',
+				query: {id}
+			})
+		}
+	},
   mounted() {
 	
   },

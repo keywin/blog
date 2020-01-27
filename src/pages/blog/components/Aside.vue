@@ -6,7 +6,7 @@
 <template>
   <div class="aside" :class="{ active: $store.state.VUEX_ASIDE.vuex_asideState }">
 		<div class="input-search">
-			<input type="text" placeholder="記事を検索">
+			<input type="text" placeholder="検索しても">
 			<i></i>
 		</div>
 		<div class="nav">

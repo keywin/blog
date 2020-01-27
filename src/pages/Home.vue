@@ -31,7 +31,7 @@ export default {
 		
 	},
   created() {
-    
+    this.isShowBack = this.$route.meta.isShowBack
   },
   methods: {
     goBackClick() {

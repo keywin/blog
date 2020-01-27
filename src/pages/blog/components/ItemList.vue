@@ -15,7 +15,7 @@
 					<p>{{ item.scription }}</p>
 					<img :src="item.imgUrl" alt="" class="l" v-if="item.imgUrl">
 				</div>
-				<div class="list-more">阅读全文</div>
+				<div class="list-more" @click="goDetail(item.id)">阅读全文</div>
 			</li>
 		</ul>
 		<div class="more" @click="goListPage(listData.id)">查看更多>></div>
@@ -37,9 +37,17 @@ export default {
   components: {},
   created() {},
   methods: {
+		// 进入列表页
 	  goListPage(id) {
 		  this.$router.push({path: '/blog/listpages', query: {id}})
-	  }
+		},
+		// 进入详情页
+		goDetail(id) {
+			this.$router.push({
+				path: '/blog/detail_col',
+				query: {id}
+			})
+		}
   },
   mounted() {
 		// lazyload()
