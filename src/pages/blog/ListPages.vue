@@ -61,9 +61,9 @@ export default {
 				display: none;
 			}
 			.titl{
-				font-size: .72rem;
+				font-size: .4rem;
 				color: #333;
-				font-weight: 600;
+				font-weight: 700;
 			}
 			.miaoshu{
 				margin-top: .2rem;

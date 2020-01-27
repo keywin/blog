@@ -38,10 +38,10 @@ export default {
   components: {},
   created() {},
   methods: {
-	  hideAsideClick(fooId, sonId) {
+	  hideAsideClick(fooId, id) {
 			this.$router.push({
 				path: '/blog/detail_col',
-				query: {sonId}
+				query: {id}
 			})
 		  this.$store.commit('CHANGE_AISDESTATE', false)
 	  }

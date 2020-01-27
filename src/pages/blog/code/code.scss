@@ -1,0 +1,69 @@
+/* 小屏 */
+@media only screen and (max-width: 600px) {
+	.detail{
+		padding: .3rem;
+		font-size: .24rem;
+		background: rgba(255,255,255,.5);
+		transition: all .3s;
+		.titl{
+			position: relative;
+			height: 1.12rem;
+			line-height: .92rem;
+			text-align: center;
+			font-size: .4rem;
+			font-weight: 700;
+			color: #000;
+		}
+		.hljs{
+			font-size: initial;
+		}
+		// heading
+		.heading{
+			font-size: .32rem;
+			font-weight: bold;
+			padding-bottom: 0;
+			color: #333;
+			line-height: 1.5;
+			padding-bottom: .1rem;
+			border-bottom: 1px solid #ddd;
+		}
+		.lineP{
+			margin-top: .2rem;
+		}
+	}
+}
+/* 大屏 */
+@media only screen and (min-width: 600px) {
+	.detail{
+		position: relative;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 30px 20px;
+		background: rgba(255,255,255,.5);
+		.titl{
+			position: relative;
+			height: 92px;
+			line-height: 92px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: 700;
+			color: #000;
+		}
+		.hljs{
+			font-size: 16px;
+		}
+		.heading{
+			font-size: 18px;
+			font-weight: bold;
+			padding-bottom: 0;
+			color: #333;
+			line-height: 1.5;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+		.lineP{
+			font-size: 15px;
+			margin-top: 20px;
+		}
+	}
+}
