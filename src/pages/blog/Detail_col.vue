@@ -4,7 +4,7 @@
 -- @script: Detail_col
 -->
 <template>
-  <div class="detail detail_col">
+  <div>
 		<!-- <h3 class="titl">今天是个好日子</h3>
 		<div class="imgFoo img_titl">
 			<img src="https://itukanokoto.com/wp/wp-content/uploads/2019/04/ieto19041802-534x667.jpg" alt="">
@@ -28,7 +28,7 @@
 		</div> -->
 		<!-- <vuex></vuex> -->
 		<component :is="allComps[comp]"></component>
-		{{ comp }}
+		<!-- {{ comp }} -->
 	</div>
 </template>
 <script>
@@ -71,5 +71,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "./code/code.scss"
+// @import "./code/code.scss"
 </style>

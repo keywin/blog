@@ -30,6 +30,29 @@
 		.lineP{
 			margin-top: .2rem;
 		}
+		.detailFooter{
+			padding-top: .4rem;
+			p{
+				font-size: .26rem;
+				color: #000;
+				span{
+					line-height: 1.8;
+				}
+				i{
+					display: inline-block;
+					width: .28rem;
+					height: .28rem;
+					background: url(~@/assets/img/icon/date.png) no-repeat;
+					background-size: 100%;
+				}
+				&.biaoqian{
+					i{
+						background: url(~@/assets/img/icon/biaoqian.png) no-repeat;
+						background-size: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 /* 大屏 */
@@ -64,6 +87,28 @@
 		.lineP{
 			font-size: 15px;
 			margin-top: 20px;
+		}
+		.detailFooter{
+			padding-top: 40px;
+			p{
+				line-height: 30px;
+				font-size: 13px;
+				color: #000;
+				i{
+					display: inline-block;
+					width: 14px;
+					height: 14px;
+					background: url(~@/assets/img/icon/date.png) no-repeat;
+					background-size: 100%;
+					vertical-align: middle;
+				}
+				&.biaoqian{
+					i{
+						background: url(~@/assets/img/icon/biaoqian.png) no-repeat;
+						background-size: 100%;
+					}
+				}
+			}
 		}
 	}
 }

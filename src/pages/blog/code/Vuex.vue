@@ -97,6 +97,16 @@
 				</code>
 			</pre>
 		</div>
+		<div class="detailFooter">
+			<p class="date">
+				<i></i>
+				<span>更新 / 2020.01.27</span>
+			</p>
+			<p class="biaoqian">
+				<i></i>
+				<span>code &amp;&amp; 前端</span>
+			</p>
+		</div>
 	</div>
 </template>
 <style lang="scss" scoped>
