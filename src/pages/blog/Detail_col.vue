@@ -32,6 +32,18 @@
 	</div>
 </template>
 <script>
+import hljs from 'highlight.js' //导入代码高亮文件
+import 'highlight.js/styles/a11y-dark.css'
+import Vue from 'vue'
+// Vue.use(Viewer)
+//自定义一个代码高亮指令
+Vue.directive('highlight',function (el) {
+  let highlight = el.querySelectorAll('pre code');
+  highlight.forEach((block)=>{
+      hljs.highlightBlock(block)
+  })
+})
+
 // import Vuex from './code/Vuex'
 import allComps from './code'
 import indexJson from "@/assets/json/blog/index.json"

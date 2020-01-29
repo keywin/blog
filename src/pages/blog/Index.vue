@@ -33,7 +33,7 @@
 	</div>
 </template>
 <script>
-import 'swiper/dist/css/swiper.css'
+// import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 import kwHeade from '@/pages/blog/components/Header'
@@ -77,27 +77,33 @@ export default {
 			swiperImg: [
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_01.jpg')
+					// img: require('@/assets/img/blog/pic/swiper_01.jpg')
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_01.jpg'
 				},
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_02.jpg')
+					// img: require('@/assets/img/blog/pic/swiper_02.jpg')
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_02.jpg'
 				},
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_03.jpg')
+					// img: require('@/assets/img/blog/pic/swiper_03.jpg')
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_03.jpg'
 				},
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_04.jpg')
+					// img: require('@/assets/img/blog/pic/swiper_04.jpg')
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_04.jpg'
 				},
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_05.jpg')
+					// img: require('@/assets/img/blog/pic/swiper_05.jpg')
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_05.jpg'
 				},
 				{
 					txt: '123',
-					img: require('@/assets/img/blog/pic/swiper_06.jpg')
+					// img: require('@/assets/img/blog/pic/swiper_06.jpg')
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_06.jpg'
 				}
 			],
 			swiperSlides: [1, 2, 3, 4, 5, 6],

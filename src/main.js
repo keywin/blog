@@ -7,8 +7,8 @@ import store from './store/index'
 
 import Bus from './bus/index'
 
-import hljs from 'highlight.js' //导入代码高亮文件
-import 'highlight.js/styles/a11y-dark.css'  //
+// import hljs from 'highlight.js' //导入代码高亮文件
+// import 'highlight.js/styles/a11y-dark.css'
 
 // 图片放大
 import Viewer from 'v-viewer'
@@ -19,13 +19,13 @@ Vue.config.productionTip = false
 
 Vue.prototype.$bus = Bus
 
-//自定义一个代码高亮指令
-Vue.directive('highlight',function (el) {
-  let highlight = el.querySelectorAll('pre code');
-  highlight.forEach((block)=>{
-      hljs.highlightBlock(block)
-  })
-})
+// //自定义一个代码高亮指令
+// Vue.directive('highlight',function (el) {
+//   let highlight = el.querySelectorAll('pre code');
+//   highlight.forEach((block)=>{
+//       hljs.highlightBlock(block)
+//   })
+// })
 
 router.afterEach((to, from, next) => {
   window.scrollTo(0, 0);
