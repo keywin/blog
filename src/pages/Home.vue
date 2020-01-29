@@ -9,6 +9,11 @@
 		<transition name="fade" appear>
 			<router-view />
 		</transition>
+    <div class="z-loading-mask">
+      <div class="z-loading-spinner">
+        123
+      </div>
+    </div>
 	</div>
 </template>
 <script>
