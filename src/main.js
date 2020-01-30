@@ -7,6 +7,10 @@ import store from './store/index'
 
 import Bus from './bus/index'
 
+import zLoading from './packages/loading'
+console.log(zLoading)
+Vue.use(zLoading)
+
 // import hljs from 'highlight.js' //导入代码高亮文件
 // import 'highlight.js/styles/a11y-dark.css'
 

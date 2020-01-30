@@ -9,11 +9,7 @@
 		<transition name="fade" appear>
 			<router-view />
 		</transition>
-    <div class="z-loading-mask">
-      <div class="z-loading-spinner">
-        123
-      </div>
-    </div>
+    <zLoading></zLoading>
 	</div>
 </template>
 <script>
@@ -89,15 +85,4 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-// .slide-fade-enter-active {
-//   transition: all .1s ease;
-// }
-// .slide-fade-leave-active {
-//   transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-// }
-// .slide-fade-enter, .slide-fade-leave-to
-// /* .slide-fade-leave-active for below version 2.1.8 */ {
-//   transform: translateX(10px);
-//   opacity: 0;
-// }
 </style>
