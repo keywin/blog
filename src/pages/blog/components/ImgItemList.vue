@@ -10,7 +10,7 @@
 		<ul class="itemList_UL">
 			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated">
 				<div class="imgFoo">
-					<img src="http://49.234.230.14/imgHost/blog/wx_20200127205845.jpg" alt="">
+					<img :src="item.imgUrl || 'http://49.234.230.14/imgHost/blog/wx_20200127205845.jpg'" alt="" style="object-fit: cover;">
 				</div>
 				<div class="list-cont">
 					<span>我</span> / <i>{{ item.update }}</i>
@@ -110,8 +110,14 @@ export default {
 				margin-bottom: 50px;
 				padding: 0 10px;
 				box-sizing: border-box;
-				img{
-					width: 100%;
+				.imgFoo{
+					height: 150px;
+					overflow: hidden;
+					img{
+						// object-fit: cover;
+						width: 100%;
+						min-height: 100%;
+					}
 				}
 				.list-cont{
 					padding-top: 8px;

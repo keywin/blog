@@ -165,7 +165,6 @@ export default {
 		max-width: 960px;
 		height: 154px;
 		margin: 30px auto 10px;
-		padding: 0 10px;
 		.swiper-wrapper{
 			.swiper-slide{
 				width: calc(50% - 10px) !important;
