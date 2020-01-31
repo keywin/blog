@@ -46,16 +46,16 @@ export default {
 	.header{
 		display: flex;
 		justify-content:space-between;
-		height: 1.6rem;
-		border-bottom: .01rem solid #dcdddd;
+		height: 1.28rem;
+		border-bottom: .01rem solid #e9e9eb;
 		p{
 			width: .6rem;
 			height: .6rem;
-			margin: .5rem .2rem 0;
-			&.search{
-				background: url('~@/assets/img/icon/search.svg') no-repeat center;
-				background-size: 100%;
-			}
+			margin: .34rem .16rem 0;
+			// &.search{
+			// 	background: url('~@/assets/img/icon/search.svg') no-repeat center;
+			// 	background-size: 100%;
+			// }
 			&.showAside{
 				background: url('~@/assets/img/icon/more.svg') no-repeat center;
 				background-size: 100%;
@@ -63,8 +63,8 @@ export default {
 		}
 		h2{
 			width: 5rem;
-			height: 1.4rem;
-			padding-top: .1rem;
+			height: 1rem;
+			padding-top: .2rem;
 			.l{
 				width: 100%;
 				height: 100%;
@@ -76,6 +76,8 @@ export default {
 		}
 	}
 }
+</style>
+<style lang="scss" scoped>
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.header{

@@ -142,10 +142,9 @@ export default {
 		display: none;
 	}
 	.swiperFoo{
-		margin-bottom: .6rem;
+		margin-bottom: .3rem;
 		box-sizing: border-box;
 		.swiperOptionMin{
-			width: 100%;
 			height: 3rem;
 		}
 	}
@@ -154,7 +153,8 @@ export default {
 		flex-direction: column-reverse;
 	}
 }
-
+</style>
+<style lang="scss" scoped>
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 	.swiperOptionMin{

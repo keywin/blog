@@ -61,26 +61,26 @@ export default {
 /* 小屏 */
 @media only screen and (max-width: 600px) {
 	.itemList{
-		margin: 0 .3rem .4rem;
-		padding: .3rem;
+		margin: 0 .32rem .32rem;
+		padding: .32rem 0;
 		background: rgba(255,255,255,.5);
 		box-shadow: 0 .04rem .24rem 0 rgba(0,0,0,.1);
 		.ul-title{
-			height: 1.6rem;
-			font-size: .4rem;
-			font-weight: bold;
+			height: .38rem;
+			line-height: .38rem;
+			margin-bottom: .5rem;
+			padding-left: .08rem;
+			font-size: .38rem;
 			color: #000;
+			border-left: .06rem solid #000;
 		}
 		.list-item{
-			.list-line{
-				display: inline-block;
-				width: .6rem;
-				height: .02rem;
-				background: #000;
-			}
+			margin-bottom: .5rem;
+			padding: 0 .3rem;
 			.list-title{
-				line-height: 1rem;
+				margin-bottom: .15rem;
 				font-size: .32rem;
+				color: #333;
 			}
 			.list-cont{
 				line-height: 1.8;
@@ -90,17 +90,6 @@ export default {
 					width: 2.3rem;
 					height: 1.6rem;
 				}
-			}
-		}
-		.more{
-			text-align: center;
-			font-size: .24rem;
-			margin-top: .2rem;
-			color: #444;
-			cursor: pointer;
-			transition: opacity .5s;
-			&:hover{
-				opacity: .8;
 			}
 		}
 	}

@@ -61,7 +61,7 @@ export default {
 	.listPages{
 		.listItem{
 			position: relative;
-			margin-bottom: .2rem;
+			margin-top: .3rem;
 			padding: .3rem;
 			background: rgba(255,255,255,.5);
 			box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
@@ -69,19 +69,20 @@ export default {
 				display: none;
 			}
 			.titl{
-				font-size: .4rem;
-				color: #333;
-				font-weight: 700;
+				line-height: 1;
+				font-size: .38rem;
+				color: #000;
 			}
 			.miaoshu{
-				margin-top: .2rem;
-				font-size: .28rem;
+				font-size: .24rem;
+				margin-top: .1rem;
+				color: #777;
 			}
 			.cont{
 				line-height: 1.8;
-				margin: .2rem 0 .5rem 0;
-				font-size: 16px;
-				color: #000;
+				margin: .2rem 0;
+				font-size: .28rem;
+				color: #666;
 			}
 			.detail{
 				text-align: right;
@@ -100,7 +101,6 @@ export default {
 						opacity: .8;
 					}
 				}
-				
 			}
 		}
 	}
@@ -134,7 +134,6 @@ export default {
 				margin-left: 80px;
 				font-size: 24px;
 				color: #333;
-				// font-weight: 600;
 			}
 			.miaoshu{
 				margin-top: 10px;

@@ -70,9 +70,10 @@ export default {
 		}
 		.nav{
 			.nav-item{
-				line-height: .88rem;
+				margin-top: .26rem;
 				padding-left: .6rem;
-				font-size: .36rem;
+				font-size: .28rem;
+				color: #666;
 				img{
 					display: block;
 					width: 2.7rem;
@@ -81,13 +82,19 @@ export default {
 				}
 			}
 			.nav-title{
-				padding: .2rem 0 0 .2rem;
+				margin-top: .5rem;
+				padding: 0 .3rem;
 				border-top: 0;
-				font-weight: bold;
+				font-size: .32rem;
+				// font-weight: bold;
+				color: #333;
+				// border-bottom: 1px solid #eee;
 			}
 		}
 	}
 }
+</style>
+<style lang="scss" scoped>
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.aside{
