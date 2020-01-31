@@ -9,15 +9,13 @@
 		<h3 class="ul-title">{{ listData.titl }}</h3>
 		<ul id="itemList_UL">
 			<li v-for="(item, i) in listData_show" :key="i" class="list-item fadeIn animated">
-				<i class="list-line"></i>
-				<h3 class="list-title">{{ item.titl }}</h3>
+				<h3 class="list-title" @click="goDetail(item.id)">{{ item.titl }}</h3>
 				<div class="list-cont">
 					<p>{{ item.scription }}</p>
 					<div class="images" v-viewer>
 						<img :src="item.imgUrl" alt="" class="l hand" v-if="item.imgUrl">
 					</div>
 				</div>
-				<div class="list-more" @click="goDetail(item.id)">阅读全文</div>
 			</li>
 		</ul>
 		<div class="more" @click="goListPage(listData.id)">查看更多>></div>
@@ -52,23 +50,7 @@ export default {
 		}
   },
   mounted() {
-		// lazyload()
-
-		// window.onscroll = lazyload
-
-		// function lazyload(docItem=4){
-		// 	let listItem = document.getElementsByClassName("list-item")
-		// 	// 可见区域高度
-		// 	var seeHeight = document.documentElement.clientHeight;
-		// 	// 滚动条距离顶部高度
-		// 	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		// 	for(var i = 0; i < docItem; i++) {
-		// 		if (listItem[i].offsetTop >= seeHeight + scrollTop) return
-		// 		console.log(listItem[i].style)
-		// 		listItem[i].style.visibility = ''
-		// 		console.log(listItem[i].style)
-		// 	}
-		// }
+		
 	},
   updated() {},
   destroyed() {}
@@ -109,11 +91,6 @@ export default {
 					height: 1.6rem;
 				}
 			}
-			.list-more{
-				margin-top: .2rem;
-				color: orangered;
-				font-size: .32rem;
-			}
 		}
 		.more{
 			text-align: center;
@@ -128,36 +105,38 @@ export default {
 		}
 	}
 }
+</style>
+<style lang="scss" scoped>
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.itemList{
 		margin-bottom: 20px;
-		padding: 30px;
-		color: #000;
+		padding: 20px 0;
 		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
 		.ul-title{
-			height: 20px;
-			font-size: 20px;
-			font-weight: 600;
+			height: 24px;
+			line-height: 24px;
+			padding-left: 8px;
+			font-size: 24px;
+			color: #000;
+			border-left: 3px solid #000;
+			// font-weight: 600;
 			
 		}
 		.list-item{
-			margin-top: 40px;
-			.list-line{
-				display: inline-block;
-				width: 30px;
-				height: 2px;
-				background: #000;
-			}
+			// margin-top: 40px;
+			padding: 20px;
 			.list-title{
 				line-height: 50px;
-				font-size: 16px;
+				font-size: 18px;
+				color: #333;
 			}
 			.list-cont{
 				line-height: 1.8;
 				margin-bottom: 10px;
 				font-size: 14px;
+				color: #666;
 				display: flex;
 				p{
 					flex: 1;
@@ -167,17 +146,12 @@ export default {
 					height: 80px;
 				}
 			}
-			.list-more{
-				color: orangered;
-				font-size: 14px;
-				cursor: pointer;
-			}
 		}
 		.more{
 			text-align: center;
 			font-size: 12px;
 			margin-top: 20px;
-			color: #444;
+			color: #777;
 			cursor: pointer;
 			transition: opacity .5s;
 			&:hover{

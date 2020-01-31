@@ -110,7 +110,7 @@ export default {
 			.nav-item{
 				// line-height: 44px;
 				padding: 10px 0 10px 20px;
-				font-size: 16px;
+				font-size: 14px;
 				color: #333;
 				cursor: pointer;
 				opacity: .8;
@@ -127,6 +127,7 @@ export default {
 			.nav-title{
 				padding: 20px 0 0 0;
 				border-top: 0;
+				font-size: 16px;
 				font-weight: bold;
 				opacity: 1;
 			}

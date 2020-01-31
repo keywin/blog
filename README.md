@@ -27,7 +27,19 @@ npm run e2e
 npm test
 ```
 
+## 设计标准
+
+- | PC | M站
+---|---|--
+区域标题 | 24px #000 | -
+主标题 | 18px #333 | -
+正文 | 14px #666 | -
+描述性文字 | 12px #777 | -
+外边距 | 20px | -
+内边距 | 20px | -
+
 ## 层级标注
+
 ```js
 // z-index
 
@@ -44,6 +56,6 @@ loading 9999999999
 
 - 图片cdn(七牛)引入`/blog/index.vue` 记录: max | 5.13s -> 255ms
 
-- 插件在对应组件中引入,避免全局引入`Detail_col.vue` 记录: vendor.xxx.js | 932k -> 
+- 插件在对应组件中引入,避免全局引入`Detail_col.vue` 记录: vendor.xxx.js | 932kB -> 166KB
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

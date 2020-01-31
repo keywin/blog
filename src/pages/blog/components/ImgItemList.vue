@@ -83,19 +83,21 @@ export default {
 		}
 	}
 }
+</style>
+<style lang="scss" scoped>
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.itemList{
 		margin-bottom: 20px;
-		padding: 30px;
+		padding: 20px;
 		color: #000;
 		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
 		.ul-title{
 			width: 100%;
 			height: 80px;
-			font-size: 20px;
-			font-weight: 600;
+			font-size: 24px;
+			// font-weight: 600;
 			
 		}
 		.itemList_UL{
