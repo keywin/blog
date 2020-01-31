@@ -89,53 +89,39 @@ export default {
 @media only screen and (min-width: 600px) {
 	.itemList{
 		margin-bottom: 20px;
-		padding: 20px;
-		color: #000;
+		padding: 20px 0;
 		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
 		.ul-title{
-			width: 100%;
-			height: 80px;
+			height: 24px;
+			line-height: 24px;
+			margin-bottom: 50px;
+			padding-left: 8px;
 			font-size: 24px;
-			// font-weight: 600;
-			
+			color: #000;
+			border-left: 3px solid #000;
 		}
 		.itemList_UL{
-			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
+			padding: 0 10px;
 			.list-item{
 				width: 50%;
-				margin-top: 40px;
+				margin-bottom: 50px;
+				padding: 0 10px;
 				box-sizing: border-box;
-				&:nth-child(odd){
-					padding-right: 10px;
-				}
-				&:nth-child(even){
-					padding-left: 10px;
-				}
 				img{
 					width: 100%;
 				}
 				.list-cont{
-					line-height: 2;
-					margin-bottom: 10px;
+					padding-top: 8px;
 					font-size: 14px;
-					span{
-						font-weight: bold;
+					color: #666;
+					p{
+						margin-top: 8px;
+						color: #333;
 					}
 				}
-			}
-		}
-		.more{
-			text-align: center;
-			font-size: 12px;
-			margin-top: 20px;
-			color: #444;
-			cursor: pointer;
-			transition: opacity .5s;
-			&:hover{
-				opacity: .8;
 			}
 		}
 	}

@@ -105,6 +105,8 @@ export default {
 		}
 	}
 }
+</style>
+<style lang="scss" scoped>
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.listPages{
@@ -128,21 +130,23 @@ export default {
 				z-index: -1;
 			}
 			.titl{
+				line-height: 1;
 				margin-left: 80px;
-				font-size: 36px;
+				font-size: 24px;
 				color: #333;
-				font-weight: 600;
+				// font-weight: 600;
 			}
 			.miaoshu{
 				margin-top: 10px;
 				margin-left: 80px;
 				font-size: 14px;
+				color: #777;
 			}
 			.cont{
 				line-height: 1.8;
 				margin: 20px 0 50px 80px;
-				font-size: 16px;
-				color: #000;
+				font-size: 14px;
+				color: #666;
 			}
 			.detail{
 				text-align: right;

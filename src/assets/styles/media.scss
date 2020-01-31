@@ -25,13 +25,13 @@
 			cursor: pointer;
 		}
 	}
-	.kw-tag{
+	.z-tag{
 		display: inline-block;
 		height: .48rem;
 		line-height: .52rem;
 		padding: 0 .2rem;
 		font-size: .24rem;
-		border: .02rem solid #eee;
+		border: .02rem solid #e9e9eb;
 	}
 }
 
@@ -41,7 +41,7 @@
 		font-family: 'KaiTi';
 	}
   .input-search{
-		border: 1px solid #eee;
+		border: 1px solid #e9e9eb;
 		input{
 			height: 44px;
 			border: 0;
@@ -55,13 +55,24 @@
 			cursor: pointer;
 		}
 	}
-	.kw-tag{
+	.z-tag{
 		display: inline-block;
 		height: 24px;
 		line-height: 24px;
 		padding: 0 10px;
 		font-size: 12px;
-		border: 1px solid #eee;
+		color: #777;
+		border: 1px solid #e9e9eb;
+	}
+	.more{
+		text-align: center;
+		font-size: 12px;
+		color: #777;
+		cursor: pointer;
+		transition: opacity .5s;
+		&:hover{
+			opacity: .8;
+		}
 	}
 }
 

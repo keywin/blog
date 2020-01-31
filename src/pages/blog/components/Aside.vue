@@ -98,18 +98,11 @@ export default {
 		.input-search{
 			border-right: 0;
 			border-left: 0;
-			// input{
-			// 	background: #f1f1f1;
-			// }
-			// i{
-			// 	background-color: #f1f1f1;
-			// }
 		}
 		.nav{
 			padding: 0 20px;
 			.nav-item{
-				// line-height: 44px;
-				padding: 10px 0 10px 20px;
+				padding: 14px 0 0 20px;
 				font-size: 14px;
 				color: #333;
 				cursor: pointer;
@@ -125,7 +118,7 @@ export default {
 				}
 			}
 			.nav-title{
-				padding: 20px 0 0 0;
+				padding-left: 0;
 				border-top: 0;
 				font-size: 16px;
 				font-weight: bold;

@@ -117,45 +117,33 @@ export default {
 		.ul-title{
 			height: 24px;
 			line-height: 24px;
+			margin-bottom: 50px;
 			padding-left: 8px;
 			font-size: 24px;
 			color: #000;
 			border-left: 3px solid #000;
-			// font-weight: 600;
-			
 		}
 		.list-item{
-			// margin-top: 40px;
-			padding: 20px;
+			margin-bottom: 50px;
+			padding: 0 20px;
 			.list-title{
-				line-height: 50px;
+				margin-bottom: 15px;
 				font-size: 18px;
 				color: #333;
 			}
 			.list-cont{
-				line-height: 1.8;
 				margin-bottom: 10px;
 				font-size: 14px;
 				color: #666;
 				display: flex;
 				p{
 					flex: 1;
+					line-height: 1.8;
 				}
 				img.l{
 					width: 130px;
 					height: 80px;
 				}
-			}
-		}
-		.more{
-			text-align: center;
-			font-size: 12px;
-			margin-top: 20px;
-			color: #777;
-			cursor: pointer;
-			transition: opacity .5s;
-			&:hover{
-				opacity: .8;
 			}
 		}
 	}

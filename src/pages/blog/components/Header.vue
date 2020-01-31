@@ -10,7 +10,7 @@
 			<img src="@/assets/img/blog/pic/微信图片_20200116111632.png" alt="" class="l">
 			<img src="https://otonarisan.info/wp/wp-content/themes/otonarisan/assets/img/common/img_kinjiro.png" alt="" class="r">
 		</h2>
-		<p class="more" @click="showAsideClick"></p>
+		<p class="showAside" @click="showAsideClick"></p>
 	</div>
 </template>
 <script>
@@ -56,7 +56,7 @@ export default {
 				background: url('~@/assets/img/icon/search.svg') no-repeat center;
 				background-size: 100%;
 			}
-			&.more{
+			&.showAside{
 				background: url('~@/assets/img/icon/more.svg') no-repeat center;
 				background-size: 100%;
 			}
@@ -79,7 +79,7 @@ export default {
 /* 大屏 */
 @media only screen and (min-width: 600px) {
 	.header{
-		.search, .more{
+		.search, .showAside{
 			display: none;
 		}
 		h2{

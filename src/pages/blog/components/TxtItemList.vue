@@ -9,7 +9,7 @@
 		<h3 class="ul-title">{{ listData.titl }}</h3>
 		<ul class="itemList_UL">
 			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated">
-				<i class="kw-tag">公告</i>
+				<i class="z-tag">公告</i>
 				<span class="list-cont ellipsis">{{ item.titl }}</span>
 				<span class="list-date">{{ item.update }}</span>
 			</li>
@@ -91,43 +91,35 @@ export default {
 @media only screen and (min-width: 600px) {
 	.itemList{
 		margin-bottom: 20px;
-		padding: 20px;
-		color: #000;
+		padding: 20px 0;
 		background: rgba(255,255,255,.5);
 		box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
 		.ul-title{
-			width: 100%;
-			height: 80px;
-			font-size: 20px;
-			// font-weight: 600;
-			
+			height: 24px;
+			line-height: 24px;
+			margin-bottom: 50px;
+			padding-left: 8px;
+			font-size: 24px;
+			color: #000;
+			border-left: 3px solid #000;
 		}
 		.itemList_UL{
-			width: 100%;
+			padding: 0 20px 50px;
 			.list-item{
 				display: flex;
 				align-items: center;
 				height: 36px;
-				border-bottom: 1px solid #eee;
+				border-bottom: 1px solid #e9e9eb;
 				.list-cont{
 					flex: 1;
 					padding: 0 10px;
 					font-size: 16px;
+					color: #666;
 				}
 				.list-date{
 					font-size: 14px;
+					color: #777;
 				}
-			}
-		}
-		.more{
-			text-align: center;
-			font-size: 12px;
-			margin-top: 20px;
-			color: #444;
-			cursor: pointer;
-			transition: opacity .5s;
-			&:hover{
-				opacity: .8;
 			}
 		}
 	}
