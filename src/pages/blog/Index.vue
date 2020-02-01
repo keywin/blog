@@ -78,7 +78,7 @@ export default {
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_01.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/39a201e8836f7dd32ae74918eb3653ee.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/vue.jpg'
 				},
 				{
 					txt: '123',
