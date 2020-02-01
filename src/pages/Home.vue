@@ -9,7 +9,7 @@
 		<transition name="fade" appear>
 			<router-view />
 		</transition>
-    <zLoading></zLoading>
+    <!-- <zLoading></zLoading> -->
 	</div>
 </template>
 <script>
