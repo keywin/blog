@@ -78,32 +78,32 @@ export default {
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_01.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_01.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/39a201e8836f7dd32ae74918eb3653ee.jpg'
 				},
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_02.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_02.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/php.png'
 				},
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_03.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_03.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/github.jpg'
 				},
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_04.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_04.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/riji.png'
 				},
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_05.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_05.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_04.jpg'
 				},
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_06.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_06.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/news.jpg'
 				}
 			],
 			swiperSlides: [1, 2, 3, 4, 5, 6],
