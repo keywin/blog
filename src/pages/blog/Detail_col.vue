@@ -27,13 +27,14 @@
 			</p>
 		</div> -->
 		<!-- <vuex></vuex> -->
-		<component :is="allComps[comp]"></component>
+		<component :is="allComps[comp]" :detailTitl="detailTitl"></component>
+		{{ allComps[comp] }}
 		<!-- {{ comp }} -->
 	</div>
 </template>
 <script>
 import hljs from 'highlight.js' //导入代码高亮文件
-import 'highlight.js/styles/a11y-dark.css'
+import 'highlight.js/styles/Zenburn.css'
 import Vue from 'vue'
 // Vue.use(Viewer)
 //自定义一个代码高亮指令
@@ -46,6 +47,7 @@ Vue.directive('highlight',function (el) {
 
 // import Vuex from './code/Vuex'
 import allComps from './code'
+console.log(allComps)
 import indexJson from "@/assets/json/blog/index.json"
 export default {
   name: "Detail_col",
@@ -53,7 +55,8 @@ export default {
     return {
 			indexJson: [],
 			comp: '',
-      allComps
+			allComps,
+			detailTitl: ''
 		};
   },
   props: [],
@@ -69,11 +72,14 @@ export default {
 			item.children.forEach(item2 => {
 				this.indexJson.push({
 					id: item2.id,
-					linkTo: item2.linkTo
+					linkTo: item2.linkTo,
+					titl: item2.titl,
 				})
 			})
 		)
-		this.comp = this.indexJson.filter(item => item.id == this.$route.query.id)[0]['linkTo']
+		let compObj = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
+		this.comp = compObj['linkTo']
+		this.detailTitl = compObj.titl
 	},
   methods: {
 	},

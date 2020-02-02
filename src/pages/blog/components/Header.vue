@@ -7,8 +7,8 @@
   <div class="header">
 		<p class="search"></p>
 		<h2>
-			<img src="@/assets/img/blog/pic/微信图片_20200116111632.png" alt="" class="l">
-			<img src="https://otonarisan.info/wp/wp-content/themes/otonarisan/assets/img/common/img_kinjiro.png" alt="" class="r">
+			<img src="http://q4ujnj8md.bkt.clouddn.com/微信图片_20200116111632.778db02.png" alt="" class="l">
+			<img src="http://q4ujnj8md.bkt.clouddn.com/img_kinjiro.png" alt="" class="r">
 		</h2>
 		<p class="showAside" @click="showAsideClick"></p>
 	</div>

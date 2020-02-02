@@ -7,7 +7,7 @@ if (process.env.NODE_ENV == 'development') {
 }
 
 if (process.env.NODE_ENV == 'production') {
-  development_IP.baseURL = "http://yyy.com"
+  development_IP.baseURL = "http://q4ujnj8md.bkt.clouddn.com/"
 }
 
 export { development_IP }

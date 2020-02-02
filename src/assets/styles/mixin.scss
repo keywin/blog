@@ -1,0 +1,33 @@
+$theme-1: (
+  primary-color: #efef8f, // 字体主色
+  font-default-color: #8F9AAE, // 默认字体颜色
+  font-error-color: #F36A5A, // 错误信息(提示信息)字体颜色
+);
+
+$theme-2: (
+  primary-color: #fff, // 字体主色
+  font-default-color: #000, // 默认字体颜色
+  font-error-color: orange, // 错误信息(提示信息)字体颜色
+);
+
+//定义映射集合
+$themes: (
+  theme1: $theme-1,
+  theme2: $theme-2
+);
+
+@mixin font-color-theme($type: 1) {
+  @each $themename, $theme in $themes {
+    [data-theme=#{$themename}] & {
+      @if ($type == 1) {
+        color: map-get($map: $theme, $key: primary-color)
+      }
+      @if ($type == 2) {
+        color: map-get($map: $theme, $key: font-default-color)
+      }
+      @if ($type == 3) {
+        color: map-get($map: $theme, $key: font-error-color)
+      }
+    }
+  }
+};

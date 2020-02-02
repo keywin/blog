@@ -1,5 +1,9 @@
 @import './reset.scss';
 @import './media.scss';
 @import './com.scss';
+@import './mixin.scss';
 
 $font-color-theme: #00FFFF; //字体主题颜色默认
+
+$components-base-primary: #999; // 组件主背景-边框基础色
+$components-primary: #3F3F3F; // 组件主背景-边框变化色

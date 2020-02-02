@@ -11,11 +11,11 @@
 		</div>
 		<div class="nav">
 			<dl v-for="item in asideList" :key="item.id">
-				<dt @click="hideAsideClick(item.id)" class="nav-item nav-title">{{ item.titl }}</dt>
+				<dt @click="goListPage(item.id)" class="nav-item nav-title">{{ item.titl }}</dt>
 					<dd @click="hideAsideClick(item.id, item2.id)" class="nav-item" v-for="item2 in item.children" :key="item2.id">
 						<!-- <router-link :to="/home" tag="li">Home</router-link> -->
 						{{ item2.titl }}
-						<img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=d73d15e55dfbb2fb342b5f1477714799/c8177f3e6709c93dfe1c134f973df8dcd000549f.jpg" v-if="item2.img" />
+						<!-- <img :src="item2.imgUrl" v-if="item2.imgUrl" /> -->
 					</dd>
 			</dl>
 		</div>
@@ -38,6 +38,9 @@ export default {
   components: {},
   created() {},
   methods: {
+		goListPage(id) {
+		  this.$router.push({path: '/blog/listpages', query: {id}})
+		},
 	  hideAsideClick(fooId, id) {
 			this.$router.push({
 				path: '/blog/detail_col',

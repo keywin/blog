@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="theme">
 		<!-- <canvas id="canvas" style="width: 100%;height: 100%;"></canvas> -->
     <router-view/>
     <!-- <div class="first-mark" v-if="isShow">
@@ -9,6 +9,7 @@
   </div>
 </template>
 <script>
+import {API_MODEL1_testData} from './api/apiModel/model_01.js'
 export default {
   name: 'App',
   data() {
@@ -17,6 +18,9 @@ export default {
     }
   },
   mounted () {
+    API_MODEL1_testData().then(res => {
+      console.log(res)
+    })
 // 			let canvas = document.querySelector('#canvas')
 // let context = canvas.getContext('2d')
 // let cw = canvas.width = window.innerWidth

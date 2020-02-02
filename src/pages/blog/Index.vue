@@ -5,7 +5,7 @@
 -->
 <template>
   <div class="blog">
-	  	<kwHeade></kwHeade>
+		<kwHeade></kwHeade>
 		<!-- 大屏 -->
 		<swiper :options="swiperOptionMax" class="swiperOptionMax">
 			<swiper-slide v-for="(item, i) in swiperImg" :key="i">

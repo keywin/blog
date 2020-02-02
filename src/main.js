@@ -17,6 +17,11 @@ Vue.prototype.$axios = http_axios
 // import hljs from 'highlight.js' //导入代码高亮文件
 // import 'highlight.js/styles/a11y-dark.css'
 
+// import { RadioGroup, Radio } from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
+// Vue.use(RadioGroup);
+// Vue.use(Radio);
+
 // 图片放大
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
@@ -36,11 +41,11 @@ Vue.prototype.$bus = Bus
 
 // 前置守卫, 没有后台, 有些组件需要解析大量代码会慢, 加载等待
 router.beforeEach((to, from, next) => {
-  console.log(1)
+  // console.log(1)
   next()
 })
 router.afterEach((to, from, next) => {
-  console.log(2)
+  // console.log(2)
   window.scrollTo(0, 0);
 });
 
@@ -53,3 +58,4 @@ new Vue({
   template: '<App/>'
 })
 
+// export sVue
