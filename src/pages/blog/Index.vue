@@ -66,10 +66,10 @@ export default {
 				slidesPerGroup : 1, // 每次切换1张
 				loop : true,
 				speed:800,
-				// autoplay: { // 自动播放
-				// 	delay: 8000,
-				// 	disableOnInteraction: false,
-				// },
+				autoplay: { // 自动播放
+					delay: 8000,
+					disableOnInteraction: false,
+				},
 				pagination: {
 					el: '.swiper-pagination', // 分页
 				}
@@ -78,7 +78,7 @@ export default {
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_01.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/vue.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/42166d224f4a20a49de25e8d98529822730ed0f8.jpg'
 				},
 				{
 					txt: '123',
@@ -88,7 +88,7 @@ export default {
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_03.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/github.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/git_03.jpg'
 				},
 				{
 					txt: '123',
@@ -98,7 +98,7 @@ export default {
 				{
 					txt: '123',
 					// img: require('@/assets/img/blog/pic/swiper_05.jpg')
-					img: 'http://q4ujnj8md.bkt.clouddn.com/swiper_04.jpg'
+					img: 'http://q4ujnj8md.bkt.clouddn.com/eat_02.jpg'
 				},
 				{
 					txt: '123',
