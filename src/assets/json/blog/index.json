@@ -6,7 +6,7 @@
             { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-01-01", "imgUrl": "http://49.234.230.14/imgHost/blog/vuex.png",
                 "scription": "由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿。为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter。"
             },
-            { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "aaa", "update": "2020-01-01", "imgUrl": "http://49.234.230.14/imgHost/blog/axios.png",
+            { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "Axios", "update": "2020-01-01", "imgUrl": "http://49.234.230.14/imgHost/blog/axios.png",
                 "scription": "vue项目开发时，为了对请求的数据做统一处理，如加loading，以及请求消息提示提示等，需要对vue配套的axios进行二次封装"
             },
             { "titl": "Api模块化及按文件自动全局引入", "id": "1-3", "linkTo": "aaa", "update": "2020-01-01" },

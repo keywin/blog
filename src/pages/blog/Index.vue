@@ -67,7 +67,7 @@ export default {
 				loop : true,
 				speed:800,
 				autoplay: { // 自动播放
-					delay: 8000,
+					delay: 3000,
 					disableOnInteraction: false,
 				},
 				pagination: {
@@ -151,6 +151,9 @@ export default {
 	.index-contens{
 		display: flex;
 		flex-direction: column-reverse;
+	}
+	.swiper-container-horizontal > .swiper-pagination-bullets{
+		bottom: 0;
 	}
 }
 </style>

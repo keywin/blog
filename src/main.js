@@ -8,8 +8,11 @@ import store from './store/index'
 import Bus from './bus/index'
 
 import zLoading from './packages/loading'
-console.log(zLoading)
+// console.log(zLoading)
 Vue.use(zLoading)
+
+import { http_axios } from '@/api/httpAxios.js'
+Vue.prototype.$axios = http_axios
 
 // import hljs from 'highlight.js' //导入代码高亮文件
 // import 'highlight.js/styles/a11y-dark.css'

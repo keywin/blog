@@ -8,7 +8,6 @@
 		<canvas id="canvas">Your Browser does not support Canvas, please upgrade</canvas>
   </div>
 </template>
-
 <script>
 export default {
   name: 'App',
