@@ -28,7 +28,6 @@
 		</div> -->
 		<!-- <vuex></vuex> -->
 		<component :is="allComps[comp]" :detailTitl="detailTitl"></component>
-		{{ allComps[comp] }}
 		<!-- {{ comp }} -->
 	</div>
 </template>
