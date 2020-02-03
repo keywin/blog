@@ -59,7 +59,7 @@
             { "titl": "共病文库", "id": "4-2", "linkTo": "aaa", "update": "2020-01-01",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767.gif"
             },
-            { "titl": "年末总结", "id": "4-3", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "回顾过去", "id": "4-3", "linkTo": "Formerly", "update": "2020-01-01",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/98b22d47547bdc996bd364c55046e524.gif"
             }
         ]

@@ -8,7 +8,7 @@
 		<!-- <h3 class="ul-title">夕朝<br />拾花</h3> -->
 		<h3 class="ul-title">{{ listData.titl }}</h3>
 		<ul class="itemList_UL">
-			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated">
+			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated" @click="goDetail(item.id)">
 				<div class="imgFoo">
 					<img :src="item.imgUrl || 'http://49.234.230.14/imgHost/blog/wx_20200127205845.jpg'" alt="" style="object-fit: cover;">
 				</div>
@@ -37,6 +37,13 @@ export default {
 	  goListPage(id) {
 		  this.$router.push({path: '/blog/listpages', query: {id}})
 		},
+		// 进入详情页
+		goDetail(id) {
+			this.$router.push({
+				path: '/blog/detail_col',
+				query: {id}
+			})
+		}
 	},
   mounted() {
 		

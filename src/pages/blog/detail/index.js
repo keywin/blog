@@ -8,9 +8,16 @@ let requireComponent = require.context(
 
 
 requireComponent.keys().forEach(fileName => {
-  let comp = requireComponent(fileName)
-  console.log(resultComps)
-  resultComps[fileName.replace(/^\.\/(.*)\.\w+$/, '$1')] = comp.default
+  // let comp = requireComponent(fileName)
+  // console.log(resultComps)
+  // resultComps[fileName.replace(/^\.\/(.*)\.\w+$/, '$1')] = comp.default
+
+  const comp = requireComponents(fileName)
+  // 截取文件名作为组件名
+  resultComps = fileName.split('.vue')[0].split('/')
+  // 考虑到可能存在文件夹/文件名的情况, 取最底级的文件名作为组件名
+  // resultComps = resultComps[resultComps.length - 1]
+  resultComps[resultComps.length - 1] = comp.default
 })
 console.log(resultComps)
 export default resultComps
