@@ -27,7 +27,7 @@
 			</p>
 		</div> -->
 		<!-- <vuex></vuex> -->
-		<component :is="allComps[comp]" :detailTitl="detailTitl"></component>
+		<component :is="allComps[comp]" :detailTitl="detailTitl" :update="update"></component>
 		<!-- {{ comp }} -->
 	</div>
 </template>
@@ -55,7 +55,8 @@ export default {
 			indexJson: [],
 			comp: '',
 			allComps,
-			detailTitl: ''
+			detailTitl: '',
+			update: ''
 		};
   },
   props: [],
@@ -73,12 +74,14 @@ export default {
 					id: item2.id,
 					linkTo: item2.linkTo,
 					titl: item2.titl,
+					update: item2.update
 				})
 			})
 		)
 		let compObj = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
 		this.comp = compObj['linkTo']
 		this.detailTitl = compObj.titl
+		this.update = compObj.update
 	},
   methods: {
 	},

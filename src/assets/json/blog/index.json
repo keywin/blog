@@ -53,13 +53,13 @@
         "titl": "随心杂记",
         "id": "4",
         "children": [
-            { "titl": "牛奶与代码", "id": "4-1", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "开始写博客", "id": "4-1", "linkTo": "OpenBlog", "update": "2020-1-16",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/defaultCover2.d1bd5b4.png"
             },
             { "titl": "共病文库", "id": "4-2", "linkTo": "aaa", "update": "2020-01-01",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767.gif"
             },
-            { "titl": "回顾过去", "id": "4-3", "linkTo": "Formerly", "update": "2020-01-01",
+            { "titl": "回顾过去", "id": "4-3", "linkTo": "Formerly", "update": "2020-2-2",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/98b22d47547bdc996bd364c55046e524.gif"
             }
         ]

@@ -18,10 +18,12 @@
 			<p class="mt30">很多当时觉得很奇妙的代码或思想</p>
 			<p class="mt30">都能让人兴奋很多天</p>
 			<p class="mt30">巴不得让身边朋友都知道这个东西</p>
-			<p class="mt30">回头再翻翻笔记, 感觉这些东都简单到说不出口。</p>
+			<p class="mt30">回头再翻翻笔记</p>
+			<p class="mt30">感觉这些东都简单到说不出口。</p>
 			<p class="mt30">最终跳到掘金, 在上面学了不少东西</p>
 			<p class="mt30">但发现了沸点以后, 从此一发不可收拾</p>
-			<p class="mt30">花在摸鱼的时间较看文章多的不止一点点, 沦为一沸鱼</p>
+			<p class="mt30">花在摸鱼的时间较看文章多的不止一点点</p>
+			<p class="mt30">沦为一沸鱼</p>
 			<div class='imgFoo mt30'>
 				<img src="http://q4ujnj8md.bkt.clouddn.com/bngd.jpg" width="80%" alt="">
 			</div>
@@ -33,7 +35,7 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>今天 / 2020.2.2</span>
+				<span>今天 / {{ update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
@@ -44,7 +46,7 @@
 </template>
 <script>
 export default {
-	props: ['detailTitl']
+	props: ['detailTitl', 'update']
 };
 </script>
 <style lang="scss" scoped>

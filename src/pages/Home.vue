@@ -5,7 +5,7 @@
 -->
 <template>
   <div class="home">
-    <div class="goBack" @click="goBackClick" v-if="isShowBack">G<br/>O<br/>B<br/>A<br/>C<br/>K</div>
+    <div class="goBack" @click="goBackClick" v-if="isShowBack">B<br/>A<br/>C<br/>K</div>
 		<transition name="fade" appear>
 			<router-view />
 		</transition>

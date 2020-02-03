@@ -57,6 +57,9 @@
 }
 /* 大屏 */
 @media only screen and (min-width: 600px) {
+	.wp70{
+		width: 70%;
+	}
 	.detail{
 		position: relative;
 		max-width: 960px;
