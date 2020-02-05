@@ -118,6 +118,7 @@ export default {
 				margin-bottom: 50px;
 				padding: 0 10px;
 				box-sizing: border-box;
+				cursor: pointer;
 				.imgFoo{
 					height: 150px;
 					overflow: hidden;

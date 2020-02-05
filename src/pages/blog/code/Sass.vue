@@ -1,6 +1,6 @@
 <template>
   <div class="detail detail_col">
-		<h3 class="titl">{{ detailTitl }}</h3>
+		<h3 class="titl">{{ detailData.titl }}</h3>
 		<!-- 使用指令 -->
 		<h3 class="heading">一、Sass配置</h3>
 		<p class="lineP">1. 相关依赖</p>
@@ -136,11 +136,11 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>更新 / {{ update }}</span>
+				<span>更新 / {{ detailData.update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
-				<span>code &amp;&amp; 前端 &amp;&amp; Sass &amp;&amp; 换肤</span>
+				<span>{{ detailData.type }} &amp;&amp; {{ detailData.fooTitl }} &amp;&amp; Sass &amp;&amp; 换肤</span>
 			</p>
 		</div>
 	</div>
@@ -153,7 +153,7 @@ export default {
 			selectVal: '1'
 		};
 	},
-	props: ['detailTitl', 'update'],
+	props: ['detailData'],
   methods: {
 	  aaa() {
 		  window.document.documentElement.setAttribute('data-theme', 'theme' + this.selectVal)

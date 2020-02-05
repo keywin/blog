@@ -31,7 +31,7 @@ export default {
   watch: {},
   computed: {
 	  listData_show: function () {
-		  return this.listData.children.filter(item=>item.scription)
+		  return this.listData.children.filter(item=>item.isShowIndex)
 	  }
   },
   components: {},
@@ -119,6 +119,7 @@ export default {
 				margin-bottom: 15px;
 				font-size: 18px;
 				color: #333;
+				cursor: pointer;
 			}
 			.list-cont{
 				margin-bottom: 10px;

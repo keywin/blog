@@ -1,10 +1,10 @@
 <template>
   <div class="detail detail_col">
-		<h3 class="titl">{{ detailTitl }}</h3>
+		<h3 class="titl">{{ detailData.titl }}</h3>
 		<div class="music-bar" @click="musicCtro">
 			<i class="music-icon" :class="{'pause': is_musicPlayed}"></i>
-			<span class="music-desc">{{ source.desc }}</span>
-			<audio  controls autoplay class="mt30" id="audio" ref="audio" :src="source.url" type="audio/mp3" />
+			<span class="music-desc">{{ detailData.source.desc }}</span>
+			<audio  controls autoplay class="mt30" id="audio" ref="audio" :src="detailData.source.url" type="audio/mp3" />
 		</div>
 		<div class="imgFoo img_titl mt30">
 			<img src="http://q4ujnj8md.bkt.clouddn.com/3e8c384ad42b321f6b982221e4efd49.jpg" width="90%" height="300px" alt="">
@@ -41,11 +41,11 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>今天 / {{ update }}</span>
+				<span>今天 / {{ detailData.update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
-				<span># 一日照片</span>
+				<span>{{ detailData.type }} # {{ detailData.fooTitl }}</span>
 			</p>
 		</div>
 	</div>
@@ -57,7 +57,7 @@ export default {
 			is_musicPlayed: true
 		}
 	},
-	props: ['detailTitl', 'update', 'source'],
+	props: ['detailData'],
 	methods: {
 		musicCtro() {
 			this.is_musicPlayed = !this.is_musicPlayed

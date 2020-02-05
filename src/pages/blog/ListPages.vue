@@ -9,7 +9,7 @@
 			<div class="post-letter">{{ item.titl[0] }}</div>
 			<h3 class="titl">{{ item.titl }}</h3>
 			<div class="miaoshu">
-				作者: keywin / 发布于: 2019-12-21 / 本文属于: 前端 / 标签: 前端
+				作者: keywin / 发布于: {{ item.update }} / 本文属于: {{ listData.titl }} / 标签: 前端
 			</div>
 			<div class="cont">
 				{{ item.scription || '工作知识点记录' }}
@@ -30,7 +30,11 @@ export default {
 	};
   },
   props: [],
-  watch: {},
+  watch: {
+		$route () {
+			this.listData = listData.filter(item=>item.id==this.$route.query.id)[0]
+		}
+	},
   computed: {
   },
   components: {},

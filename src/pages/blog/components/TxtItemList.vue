@@ -106,6 +106,7 @@ export default {
 				align-items: center;
 				height: 36px;
 				border-bottom: 1px solid #e9e9eb;
+				cursor: pointer;
 				.list-cont{
 					flex: 1;
 					padding: 0 10px;

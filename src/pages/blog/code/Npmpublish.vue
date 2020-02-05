@@ -1,6 +1,6 @@
 <template>
   <div class="detail detail_col">
-		<h3 class="titl">{{ detailTitl }}</h3>
+		<h3 class="titl">{{ detailData.titl }}</h3>
 		<!-- 使用指令 -->
 		<p class="lineP">1. 结构说明</p>
 		<div v-highlight >
@@ -171,11 +171,11 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>更新 / {{ update }}</span>
+				<span>更新 / {{ detailData.update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
-				<span>code &amp;&amp; 前端</span>
+				<span>{{ detailData.type }} &amp;&amp; {{ detailData.fooTitl }}</span>
 			</p>
 		</div>
 	</div>
@@ -187,7 +187,7 @@ export default {
 			aaa: 123
 		}
 	},
-	props: ['detailTitl', 'update']
+	props: ['detailData']
 };
 </script>
 <style lang="scss" scoped>

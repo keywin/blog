@@ -4,29 +4,32 @@
         "id": "1",
         "children": [
             { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-1-27", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/vuex.png",
-                "scription": "由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿。为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter。"
+                "scription": "由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿。为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter。",
+                "isShowIndex": true, "type": "code"
             },
             { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "Axios", "update": "2020-2-2", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/axios.png",
-                "scription": "vue项目开发时，为了对请求的数据做统一处理，如加loading，以及请求消息提示提示等，需要对vue配套的axios进行二次封装"
+                "scription": "vue项目开发时，为了对请求的数据做统一处理，如加loading，以及请求消息提示提示等，需要对vue配套的axios进行二次封装",
+                "isShowIndex": true, "type": "code"
             },
-            { "titl": "Api模块化及按组件自动全局引入", "id": "1-3", "linkTo": "Api", "update": "2020-2-2" },
-            { "titl": "Sass配置及换肤", "id": "1-4", "linkTo": "Sass", "update": "2020-01-01" },
-            { "titl": "Npm发布插件", "id": "1-5", "linkTo": "Npmpublish", "update": "2020-2-5" },
-            { "titl": "Vue常见问题", "id": "1-6", "linkTo": "Vueproblems", "update": "2020-2-5" },
-            { "titl": "Tool.js", "id": "1-7", "linkTo": "Tool", "update": "2020-2-5" },
-            { "titl": "Flex说明与示例", "id": "1-8", "linkTo": "Flex", "update": "2020-01-01" },
-            { "titl": "Es6总结与实例", "id": "1-9", "linkTo": "Es6", "update": "2020-01-01" },
-            { "titl": "常用正则", "id": "1-10", "linkTo": "Reg", "update": "2020-01-01" },
-            { "titl": "If语句优化", "id": "1-11", "linkTo": "Ifoptimize", "update": "2020-01-01" },
-            { "titl": "小程序自学", "id": "1-12", "linkTo": "Wx", "update": "2020-01-01" }
+            { "titl": "Api模块化及按组件自动全局引入", "id": "1-3", "linkTo": "Api", "update": "2020-2-2", "type": "code" },
+            { "titl": "Sass配置及换肤", "id": "1-4", "linkTo": "Sass", "update": "1970-1-1", "type": "code" },
+            { "titl": "Npm发布插件", "id": "1-5", "linkTo": "Npmpublish", "update": "2020-2-5", "type": "code" },
+            { "titl": "Vue常见问题", "id": "1-6", "linkTo": "Vueproblems", "update": "2020-2-5", "type": "code" },
+            { "titl": "Tool.js", "id": "1-7", "linkTo": "Tool", "update": "2020-2-5", "type": "code" },
+            { "titl": "Flex说明与示例", "id": "1-8", "linkTo": "Flex", "update": "1970-1-1", "type": "code" },
+            { "titl": "Es6总结与实例", "id": "1-9", "linkTo": "Es6", "update": "1970-1-1", "type": "code" },
+            { "titl": "常用正则", "id": "1-10", "linkTo": "Reg", "update": "1970-1-1", "type": "code" },
+            { "titl": "If语句优化", "id": "1-11", "linkTo": "Ifoptimize", "update": "1970-1-1", "type": "code" },
+            { "titl": "小程序自学", "id": "1-12", "linkTo": "Wx", "update": "1970-1-1", "type": "code" }
         ]
     },
     {
         "titl": "后端",
         "id": "2",
         "children": [
-            { "titl": "Express启动", "id": "2-1", "linkTo": "Express", "update": "2020-01-01",
-                "scription": "使用exprrss配合node做了一款可以在本地生成接口的项目, 无数据库, 用本地json文件代替数据库, 可以做一些简单的查询、分页及其他, 可以向前端返回数据及状态码等"
+            { "titl": "Express启动", "id": "2-1", "linkTo": "Express", "update": "1970-1-1",
+                "scription": "使用exprrss配合node做了一款可以在本地生成接口的项目, 无数据库, 用本地json文件代替数据库, 可以做一些简单的查询、分页及其他, 可以向前端返回数据及状态码等",
+                "isShowIndex": true, "type": "code"
             }
         ]
     },
@@ -36,17 +39,19 @@
         "children": [
             { "titl": "Https://github.com", "id": "3-1", "linkTo": "https://github.com",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/github.jpg",
-                "scription": "GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等"
+                "scription": "GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等",
+                "isShowIndex": true, "type": "工具"
             },
-            { "titl": "TortoiseSVN", "id": "3-2", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Git配置及基础命令", "id": "3-3", "linkTo": "aaa", "update": "2020-01-01",
-                "scription": "主要描述了一些git常用基础命令, 用作学习交流使用, 入有错误或好的建议, 欢迎指正"
+            { "titl": "TortoiseSVN", "id": "3-2", "linkTo": "aaa", "update": "1970-1-1" },
+            { "titl": "Git配置及基础命令", "id": "3-3", "linkTo": "aaa", "update": "1970-1-1",
+                "scription": "主要描述了一些git常用基础命令, 用作学习交流使用, 入有错误或好的建议, 欢迎指正",
+                "isShowIndex": true, "type": "工具"
             },
-            { "titl": "Hbuilder打包", "id": "3-4", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Hbuilder快捷键", "id": "3-5", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Vscode快捷键", "id": "3-6", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Vscode常用插件", "id": "3-7", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Markdown语法", "id": "3-8", "linkTo": "aaa", "update": "2020-01-01" }
+            { "titl": "Hbuilder打包", "id": "3-4", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Hbuilder快捷键", "id": "3-5", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Vscode快捷键", "id": "3-6", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Vscode常用插件", "id": "3-7", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Markdown语法", "id": "3-8", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" }
         ]
     },
     {
@@ -54,12 +59,15 @@
         "id": "4",
         "children": [
             { "titl": "开始写博客", "id": "4-1", "linkTo": "OpenBlog", "update": "2020-1-16",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/defaultCover2.d1bd5b4.png"
+                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/defaultCover2.d1bd5b4.png",
+                "isShowIndex": true, "type": "文学"
             },
-            { "titl": "共病文库", "id": "4-2", "linkTo": "aaa", "update": "2020-01-01",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767.gif"
+            { "titl": "共病文库", "id": "4-2", "linkTo": "aaa", "update": "1970-1-1",
+                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767.gif",
+                "isShowIndex": true, "type": "文学"
             },
             { "titl": "凡是过往，皆为序章", "id": "4-3", "linkTo": "Formerly", "update": "2020-2-2",
+                "isShowIndex": true, "type": "文学",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/rain.gif", "source": {
                     "url": "http://q4ujnj8md.bkt.clouddn.com/189628679.mp3",
                     "desc": "Yesterday Once More"
@@ -71,16 +79,20 @@
         "titl": "动漫",
         "id": "5",
         "children": [
-            { "titl": "火影忍者", "id": "5-1", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "火影忍者", "id": "5-1", "linkTo": "aaa", "update": "1970-1-1",
+                "isShowIndex": true, "type": "爱好",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/naruto.gif"
             },
-            { "titl": "我想吃掉你的胰脏", "id": "5-2", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "我想吃掉你的胰脏", "id": "5-2", "linkTo": "aaa", "update": "1970-1-1",
+                "isShowIndex": true, "type": "爱好",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/eat_01.jpg"
             },
-            { "titl": "夏目友人帐", "id": "5-3", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "夏目友人帐", "id": "5-3", "linkTo": "aaa", "update": "1970-1-1",
+                "isShowIndex": true, "type": "爱好",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/xmyrz.gif"
             },
-            { "titl": "宫崎骏系列", "id": "5-4", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "宫崎骏系列", "id": "5-4", "linkTo": "aaa", "update": "1970-1-1",
+                "isShowIndex": true, "type": "爱好",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/gqj.gif"
             }
         ]
@@ -89,10 +101,19 @@
         "titl": "情报更新",
         "id": "6",
         "children": [
-            { "titl": "火影忍者", "id": "5-1", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "我想吃掉你的胰脏", "id": "5-2", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "夏目友人帐", "id": "5-3", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "宫崎骏系列", "id": "5-4", "linkTo": "aaa", "update": "2020-01-01" }
+            { "titl": "对页面ui进行改版,添加了一些详情页", "id": "6-1", "linkTo": "aaa", "update": "2020-2-5", "type": "更新", "isShowIndex": true },
+            { "titl": "优化了一些图片", "id": "6-2", "linkTo": "aaa", "update": "2020-2-4", "type": "更新", "isShowIndex": true },
+            { "titl": "夏目友人帐", "id": "6-3", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": true },
+            { "titl": "宫崎骏系列", "id": "6-4", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": true }
+        ]
+    },
+    {
+        "titl": "关于",
+        "id": "7",
+        "children": [
+            { "titl": "简历", "id": "7-1", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
+            { "titl": "邻居", "id": "7-2", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
+            { "titl": "联系我", "id": "7-3", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true }
         ]
     }
 ]

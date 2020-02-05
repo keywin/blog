@@ -9,7 +9,7 @@
 		<div class="box">
 			<h2>
 				<img src="http://q4ujnj8md.bkt.clouddn.com/微信图片_20200116111632.778db02.png" alt="" class="l">
-				<img src="http://q4ujnj8md.bkt.clouddn.com/logo.png" alt="" class="r">
+				<img src="http://q4ujnj8md.bkt.clouddn.com/logo.png" alt="" class="r" @click="goHome()">
 			</h2>
 			<ul class="navList">
 				<li v-for="item in listData" :key="item.id" @click="navClick(item.id)" :class="{'active': checkedId == item.id}">{{item.titl}}</li>
@@ -25,22 +25,37 @@ export default {
   data() {
     return {
 			listData,
-			checkedId: '-1'
+			checkedId: '-1',
 		};
   },
   props: [],
-  watch: {},
+  watch: {
+		$route () {
+			this.checkedId = this.$route.query.id ? this.$route.query.id.split('-')[0] : '-1'
+    }
+	},
   computed: {},
   components: {
 		
 	},
-  created() {},
+  created() {
+		this.checkedId = this.$route.query.id ? this.$route.query.id.split('-')[0] : '-1'
+	},
   methods: {
 	  showAsideClick() {
 		  this.$store.commit('CHANGE_AISDESTATE', true)
 		},
 		navClick(id) {
-			this.checkedId = id
+			if(this.$route.query.id == id) return
+			this.$router.push({
+				path: '/blog/listpages',
+				query: {id}
+			})
+		},
+		goHome() {
+			this.$router.push({
+				path: '/'
+			})
 		}
   },
   mounted() {
@@ -112,6 +127,7 @@ export default {
 					&.active{
 						color: #000;
 						font-weight: 700;
+						border-bottom: 1px solid #000;
 					}
 				}
 			}
@@ -125,6 +141,7 @@ export default {
 				.r{
 					height: 64px;
 					margin-right: 20px;
+					cursor: pointer;
 				}
 			}
 		}

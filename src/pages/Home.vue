@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       isShowBack: false,
-      isShowAside: false,
+      isShowAside: false
     };
   },
   props: [],
@@ -73,6 +73,8 @@ export default {
     margin-top: 1.28rem;
   }
   .goBack{
+    width: .5rem;
+    height: .5rem;
     right: .6rem;
     bottom: .6rem;
     padding: .3rem;

@@ -5,7 +5,7 @@
 -->
 <template>
   <div>
-		<component :is="allComps[comp]" :detailTitl="detailTitl" :update="update" :source="source"></component>
+		<component :is="allComps[detailData.linkTo]" :detailData="detailData"></component>
 	</div>
 </template>
 <script>
@@ -30,21 +30,23 @@ export default {
   data() {
     return {
 			indexJson: [],
-			comp: '',
+			detailData: {},
+			// linkTo: '',
 			allComps,
-			detailTitl: '',
-			update: '',
-			source: {}
+			// detailTitl: '',
+			// update: '',
+			// source: {}
 		};
   },
   props: [],
   watch: {
 		$route () {
-			let compObj = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
-			this.comp = compObj['linkTo']
-			this.detailTitl = compObj.titl
-			this.update = compObj.update
-			this.source = compObj.source
+			this.detailData = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
+			
+			// this.linkTo = compObj['linkTo']
+			// this.detailTitl = compObj.titl
+			// this.update = compObj.update
+			// this.source = compObj.source
 		}
 	},
   computed: {},
@@ -52,22 +54,18 @@ export default {
 	  // Vuex
   },
   created() {
-		indexJson.forEach(item => 
+		indexJson.forEach(item =>
 			item.children.forEach(item2 => {
-				this.indexJson.push({
-					id: item2.id,
-					linkTo: item2.linkTo,
-					titl: item2.titl,
-					update: item2.update,
-					source: item2.source || {}
-				})
+				item2.fooTitl = item.titl
+				this.indexJson.push(item2)
 			})
 		)
-		let compObj = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
-		this.comp = compObj['linkTo']
-		this.detailTitl = compObj.titl
-		this.update = compObj.update
-		this.source = compObj.source
+		this.detailData = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
+		console.log(this.detailData)
+		// this.linkTo = compObj['linkTo']
+		// this.detailTitl = compObj.titl
+		// this.update = compObj.update
+		// this.source = compObj.source
 	},
   methods: {
 	},

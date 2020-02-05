@@ -42,12 +42,13 @@ Vue.prototype.$bus = Bus
 // 前置守卫, 没有后台, 有些组件需要解析大量代码会慢, 加载等待
 router.beforeEach((to, from, next) => {
   // console.log(1)
+  window.scrollTo(0, 0);
   next()
 })
-router.afterEach((to, from, next) => {
-  // console.log(2)
-  window.scrollTo(0, 0);
-});
+// router.afterEach((to, from, next) => {
+//   // console.log(2)
+//   window.scrollTo(0, 0);
+// });
 
 /* eslint-disable no-new */
 new Vue({

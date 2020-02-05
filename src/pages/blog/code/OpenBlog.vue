@@ -1,6 +1,6 @@
 <template>
   <div class="detail detail_col">
-		<h3 class="titl">{{ detailTitl }}</h3>
+		<h3 class="titl">{{ detailData.titl }}</h3>
 		<div class='imgFoo mt30 tx-c'>
 				<img src="http://q4ujnj8md.bkt.clouddn.com/riben.png" width="80%" alt="">
 			</div>
@@ -23,18 +23,18 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>今天 / {{ update }}</span>
+				<span>今天 / {{ detailData.update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
-				<span># 一日照片</span>
+				<span>{{ detailData.type }} # {{ detailData.fooTitl }}</span>
 			</p>
 		</div>
 	</div>
 </template>
 <script>
 export default {
-	props: ['detailTitl', 'update']
+	props: ['detailData']
 };
 </script>
 <style lang="scss" scoped>
