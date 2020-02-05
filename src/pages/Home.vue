@@ -7,7 +7,7 @@
   <div class="home">
     <kwHeade></kwHeade>
     <kw-aside :isShowAside="isShowAside" class="isShowAside"></kw-aside>
-    <div class="goBack" @click="goBackClick" v-if="isShowBack">B<br/>A<br/>C<br/>K</div>
+    <div class="goBack" @click="goBackClick" v-if="isShowBack"></div>
 		<transition name="fade" appear>
 			<router-view />
 		</transition>
@@ -59,8 +59,11 @@ export default {
 }
 .goBack{
   position: fixed;
+  transform: rotate(180deg);
   color: #000;
-  background: rgba(255,255,255,.5);
+  border-radius: 50%;
+  background: url(~@/assets/img/icon/icon_arrow.png) center no-repeat rgba(255,255,255,.5);
+  background-size: 70%;
   box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
   z-index: 99;
 }
