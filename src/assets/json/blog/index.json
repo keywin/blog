@@ -111,9 +111,10 @@
         "titl": "关于",
         "id": "7",
         "children": [
-            { "titl": "简历", "id": "7-1", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
-            { "titl": "邻居", "id": "7-2", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
-            { "titl": "联系我", "id": "7-3", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true }
+            { "titl": "关于博客", "id": "7-1", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
+            { "titl": "简历", "id": "7-2", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
+            { "titl": "邻居", "id": "7-3", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true },
+            { "titl": "联系我", "id": "7-4", "linkTo": "aaa", "update": "2020-2-6", "type": "关于", "isShowIndex": true }
         ]
     }
 ]

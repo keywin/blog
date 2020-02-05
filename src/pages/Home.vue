@@ -29,6 +29,7 @@ export default {
   watch: {
     $route () {
       this.isShowBack = this.$route.meta.isShowBack
+      this.$store.commit('CHANGE_AISDESTATE', false)
     }
   },
   computed: {},

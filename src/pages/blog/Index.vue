@@ -23,7 +23,7 @@
 			</swiper>
 		</div>
 		<div class="index-contens">
-			<kw-aside :isShowAside="isShowAside"></kw-aside>
+			<kw-aside :isShowAside="isShowAside" class="isShowAside"></kw-aside>
 			<div class="content">
 				<kw-item-list v-for="item in indexJson1" :key="item.id" :listData="item"></kw-item-list>
 				<kw-img-item-list v-for="item in indexJson2" :key="item.id" :listData="item"></kw-img-item-list>
@@ -132,6 +132,9 @@ export default {
 <style lang="scss" scoped>
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.isShowAside{
+		display: none;
+	}
   .swiperOptionMax{
 		display: none;
 	}
