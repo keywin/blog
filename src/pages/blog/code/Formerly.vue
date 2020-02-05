@@ -1,7 +1,7 @@
 <template>
   <div class="detail detail_col">
 		<h3 class="titl">{{ detailTitl }}</h3>
-		<div id="music-bar" @click="musicCtro">
+		<div class="music-bar" @click="musicCtro">
 			<i class="music-icon" :class="{'pause': is_musicPlayed}"></i>
 			<span class="music-desc">{{ source.desc }}</span>
 			<audio  controls autoplay class="mt30" id="audio" ref="audio" :src="source.url" type="audio/mp3" />

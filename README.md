@@ -46,11 +46,13 @@ border | #e9e9eb | -
 ```js
 // z-index
 
-Aside 999999999
+Aside 2001
+
+Header 101
 
 goBack 99
 
-loading 9999999999
+loading 2099
 ```
 
 ## 优化记录

@@ -1,6 +1,6 @@
 [
     {
-        "titl": "前端学习",
+        "titl": "前端",
         "id": "1",
         "children": [
             { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-1-27", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/vuex.png",
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "titl": "后端cv型",
+        "titl": "后端",
         "id": "2",
         "children": [
             { "titl": "Express启动", "id": "2-1", "linkTo": "Express", "update": "2020-01-01",

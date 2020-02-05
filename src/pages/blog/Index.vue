@@ -5,7 +5,7 @@
 -->
 <template>
   <div class="blog">
-		<kwHeade></kwHeade>
+		<!-- <kwHeade></kwHeade> -->
 		<!-- 大屏 -->
 		<swiper :options="swiperOptionMax" class="swiperOptionMax">
 			<swiper-slide v-for="(item, i) in swiperImg" :key="i">
@@ -36,7 +36,7 @@
 // import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
-import kwHeade from '@/pages/blog/components/Header'
+// import kwHeade from '@/pages/blog/components/Header'
 import kwAside from '@/pages/blog/components/Aside'
 import kwItemList from '@/pages/blog/components/ItemList'
 import kwImgItemList from '@/pages/blog/components/ImgItemList'
@@ -77,32 +77,26 @@ export default {
 			swiperImg: [
 				{
 					txt: '123',
-					// img: require('@/assets/img/blog/pic/swiper_01.jpg')
 					img: 'http://q4ujnj8md.bkt.clouddn.com/42166d224f4a20a49de25e8d98529822730ed0f8.jpg'
 				},
 				{
 					txt: '123',
-					// img: require('@/assets/img/blog/pic/swiper_02.jpg')
 					img: 'http://q4ujnj8md.bkt.clouddn.com/php.png'
 				},
 				{
 					txt: '123',
-					// img: require('@/assets/img/blog/pic/swiper_03.jpg')
 					img: 'http://q4ujnj8md.bkt.clouddn.com/git_03.jpg'
 				},
 				{
 					txt: '123',
-					// img: require('@/assets/img/blog/pic/swiper_04.jpg')
 					img: 'http://q4ujnj8md.bkt.clouddn.com/riji.png'
 				},
 				{
 					txt: '123',
-					// img: require('@/assets/img/blog/pic/swiper_05.jpg')
 					img: 'http://q4ujnj8md.bkt.clouddn.com/eat_02.jpg'
 				},
 				{
 					txt: '123',
-					// img: require('@/assets/img/blog/pic/swiper_06.jpg')
 					img: 'http://q4ujnj8md.bkt.clouddn.com/news.jpg'
 				}
 			],
@@ -119,7 +113,7 @@ export default {
 	},
   computed: {},
   components: {
-	  	kwHeade,
+	  	// kwHeade,
 		swiper,
 		swiperSlide,
 		kwAside,

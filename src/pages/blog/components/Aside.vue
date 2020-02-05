@@ -46,7 +46,7 @@ export default {
 				path: '/blog/detail_col',
 				query: {id}
 			})
-		  this.$store.commit('CHANGE_AISDESTATE', false)
+			this.$store.commit('CHANGE_AISDESTATE', false)
 	  }
   },
   mounted() {
@@ -65,7 +65,7 @@ export default {
 		width: 100%;
 		height: 100%;
 		background: #fff;
-		z-index: 999999999;
+		z-index: 2001;
 		transition: left .4s cubic-bezier(.6,0,.2,1) 0s;
 		overflow-y: scroll;
 		&.active{

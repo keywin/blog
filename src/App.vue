@@ -209,7 +209,7 @@ function anim(){
   top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 99999999;
+  z-index: 2099;
   background: rgba(255,255,255,.95);
 }
 #canvas{

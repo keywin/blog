@@ -46,7 +46,7 @@
 	.mt30{
 		margin-top: .3rem;
 	}
-	#music-bar{
+	.music-bar{
 		display: flex;
 		align-items: center;
 		width: 100%;
@@ -71,6 +71,9 @@
 		audio{
 			display: none;
 		}
+	}
+	.z-shadow{
+		box-shadow: 0 0.04rem 0.24rem 0 rgba(0,0,0,0.1);
 	}
 }
 
@@ -116,7 +119,7 @@
 	.mt30{
 		margin-top: 30px;
 	}
-	#music-bar{
+	.music-bar{
 		display: flex;
 		align-items: center;
 		width: 100%;
@@ -143,6 +146,9 @@
 		audio{
 			display: none;
 		}
+	}
+	.z-shadow{
+		box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
 	}
 }
 
