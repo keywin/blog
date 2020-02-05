@@ -136,7 +136,7 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>更新 / 2020.2.2</span>
+				<span>更新 / {{ update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
@@ -153,7 +153,7 @@ export default {
 			selectVal: '1'
 		};
 	},
-	props: ['detailTitl'],
+	props: ['detailTitl', 'update'],
   methods: {
 	  aaa() {
 		  window.document.documentElement.setAttribute('data-theme', 'theme' + this.selectVal)

@@ -182,7 +182,7 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>更新 / 2020.2.2</span>
+				<span>更新 / {{ update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
@@ -193,7 +193,7 @@
 </template>
 <script>
 export default {
-	props: ['detailTitl']
+	props: ['detailTitl', 'update']
 };
 </script>
 <style lang="scss" scoped>

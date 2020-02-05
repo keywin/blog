@@ -27,7 +27,7 @@
 			</p>
 		</div> -->
 		<!-- <vuex></vuex> -->
-		<component :is="allComps[comp]" :detailTitl="detailTitl" :update="update"></component>
+		<component :is="allComps[comp]" :detailTitl="detailTitl" :update="update" :source="source"></component>
 		<!-- {{ comp }} -->
 	</div>
 </template>
@@ -46,7 +46,7 @@ Vue.directive('highlight',function (el) {
 
 // import Vuex from './code/Vuex'
 import allComps from './code'
-console.log(allComps)
+// console.log(allComps)
 import indexJson from "@/assets/json/blog/index.json"
 export default {
   name: "Detail_col",
@@ -56,7 +56,8 @@ export default {
 			comp: '',
 			allComps,
 			detailTitl: '',
-			update: ''
+			update: '',
+			source: {}
 		};
   },
   props: [],
@@ -74,7 +75,8 @@ export default {
 					id: item2.id,
 					linkTo: item2.linkTo,
 					titl: item2.titl,
-					update: item2.update
+					update: item2.update,
+					source: item2.source || {}
 				})
 			})
 		)
@@ -82,6 +84,7 @@ export default {
 		this.comp = compObj['linkTo']
 		this.detailTitl = compObj.titl
 		this.update = compObj.update
+		this.source = compObj.source
 	},
   methods: {
 	},

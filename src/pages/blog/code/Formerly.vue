@@ -1,6 +1,11 @@
 <template>
   <div class="detail detail_col">
 		<h3 class="titl">{{ detailTitl }}</h3>
+		<div id="music-bar" @click="musicCtro">
+			<i class="music-icon" :class="{'pause': is_musicPlayed}"></i>
+			<span class="music-desc">{{ source.desc }}</span>
+			<audio  controls autoplay class="mt30" id="audio" ref="audio" :src="source.url" type="audio/mp3" />
+		</div>
 		<div class="imgFoo img_titl mt30">
 			<img src="http://q4ujnj8md.bkt.clouddn.com/3e8c384ad42b321f6b982221e4efd49.jpg" width="90%" height="300px" alt="">
 		</div>
@@ -30,6 +35,7 @@
 			<p class="mt30">总之，过去以来</p>
 			<p class="mt30">比较学生时代进步是有一点点</p>
 			<p class="mt30">但更多的是颓废与迷茫</p>
+			<p class="mt30">所以, 需要做一些改变</p>
 			<p class="mt30">过去都是假的，唯有未来，才是真正。</p>
 		</div>
 		<div class="detailFooter">
@@ -46,9 +52,20 @@
 </template>
 <script>
 export default {
-	props: ['detailTitl', 'update']
+	data() {
+		return {
+			is_musicPlayed: true
+		}
+	},
+	props: ['detailTitl', 'update', 'source'],
+	methods: {
+		musicCtro() {
+			this.is_musicPlayed = !this.is_musicPlayed
+			this.is_musicPlayed ? this.$refs.audio.play() : this.$refs.audio.pause()
+		}
+	}
 };
 </script>
 <style lang="scss" scoped>
-@import "./art.scss"
+@import "./art.scss";
 </style>

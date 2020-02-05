@@ -3,29 +3,29 @@
         "titl": "前端学习",
         "id": "1",
         "children": [
-            { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-01-01", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/vuex.png",
+            { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-1-27", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/vuex.png",
                 "scription": "由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿。为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter。"
             },
-            { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "Axios", "update": "2020-01-01", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/axios.png",
+            { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "Axios", "update": "2020-2-2", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/axios.png",
                 "scription": "vue项目开发时，为了对请求的数据做统一处理，如加loading，以及请求消息提示提示等，需要对vue配套的axios进行二次封装"
             },
-            { "titl": "Api模块化及按组件自动全局引入", "id": "1-3", "linkTo": "Api", "update": "2020-01-01" },
+            { "titl": "Api模块化及按组件自动全局引入", "id": "1-3", "linkTo": "Api", "update": "2020-2-2" },
             { "titl": "Sass配置及换肤", "id": "1-4", "linkTo": "Sass", "update": "2020-01-01" },
-            { "titl": "Npm发布插件", "id": "1-5", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Vue常见报错及处理", "id": "1-6", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Tool.js", "id": "1-7", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Flex说明与示例", "id": "1-8", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "Es6总结与实例", "id": "1-9", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "常用正则", "id": "1-10", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "If语句优化", "id": "1-11", "linkTo": "aaa", "update": "2020-01-01" },
-            { "titl": "小程序自学", "id": "1-12", "linkTo": "aaa", "update": "2020-01-01" }
+            { "titl": "Npm发布插件", "id": "1-5", "linkTo": "Npmpublish", "update": "2020-2-5" },
+            { "titl": "Vue常见问题", "id": "1-6", "linkTo": "Vueproblems", "update": "2020-2-5" },
+            { "titl": "Tool.js", "id": "1-7", "linkTo": "Tool", "update": "2020-2-5" },
+            { "titl": "Flex说明与示例", "id": "1-8", "linkTo": "Flex", "update": "2020-01-01" },
+            { "titl": "Es6总结与实例", "id": "1-9", "linkTo": "Es6", "update": "2020-01-01" },
+            { "titl": "常用正则", "id": "1-10", "linkTo": "Reg", "update": "2020-01-01" },
+            { "titl": "If语句优化", "id": "1-11", "linkTo": "Ifoptimize", "update": "2020-01-01" },
+            { "titl": "小程序自学", "id": "1-12", "linkTo": "Wx", "update": "2020-01-01" }
         ]
     },
     {
         "titl": "后端cv型",
         "id": "2",
         "children": [
-            { "titl": "Express启动", "id": "2-1", "linkTo": "aaa", "update": "2020-01-01",
+            { "titl": "Express启动", "id": "2-1", "linkTo": "Express", "update": "2020-01-01",
                 "scription": "使用exprrss配合node做了一款可以在本地生成接口的项目, 无数据库, 用本地json文件代替数据库, 可以做一些简单的查询、分页及其他, 可以向前端返回数据及状态码等"
             }
         ]
@@ -59,8 +59,11 @@
             { "titl": "共病文库", "id": "4-2", "linkTo": "aaa", "update": "2020-01-01",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767.gif"
             },
-            { "titl": "回顾过去", "id": "4-3", "linkTo": "Formerly", "update": "2020-2-2",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/98b22d47547bdc996bd364c55046e524.gif"
+            { "titl": "凡是过往，皆为序章", "id": "4-3", "linkTo": "Formerly", "update": "2020-2-2",
+                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/rain.gif", "source": {
+                    "url": "http://q4ujnj8md.bkt.clouddn.com/189628679.mp3",
+                    "desc": "Yesterday Once More"
+                }
             }
         ]
     },

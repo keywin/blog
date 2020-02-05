@@ -3,7 +3,7 @@
 		<h3 class="titl">{{ detailTitl }}</h3>
 		<!-- 使用指令 -->
 		<h3 class="heading">一、Api模块化</h3>
-		<p class="lineP">1. 文件</p>
+		<p class="lineP">1. 结构说明</p>
 		<div v-highlight >
 			<pre>
 				<code class="js">
@@ -76,7 +76,7 @@
 		<div class="detailFooter">
 			<p class="date">
 				<i></i>
-				<span>更新 / 2020.2.2</span>
+				<span>更新 / {{ update }}</span>
 			</p>
 			<p class="biaoqian">
 				<i></i>
@@ -86,9 +86,8 @@
 	</div>
 </template>
 <script>
-console.log(123)
 export default {
-	props: ['detailTitl']
+	props: ['detailTitl', 'update'],
 };
 </script>
 <style lang="scss" scoped>
