@@ -37,6 +37,11 @@ export default {
 		$route () {
 			this.isShowBack = this.$route.meta.isShowBack
 			this.checkedId = this.$route.query.id ? this.$route.query.id.split('-')[0] : '-1'
+
+			if(this.checkedId != '-1') {
+				let checkedData = this.listData.filter( item => item.id == this.$route.query.id.split('-')[0] )[0]
+				this.headerTitl = this.$route.query.id.split('-')[1] ? checkedData.children.filter(item => item.id == this.$route.query.id)[0].titl : checkedData.titl
+			}
     }
 	},
   computed: {},
@@ -46,10 +51,11 @@ export default {
   created() {
 		this.isShowBack = this.$route.meta.isShowBack
 		this.checkedId = this.$route.query.id ? this.$route.query.id.split('-')[0] : '-1'
-		this.headerTitl = this.listData.filter(item => {
-				item.id == this.$route.query.id
-			})
-			console.log(this.headerTitl)
+		
+		if(this.checkedId != '-1') {
+			let checkedData = this.listData.filter( item => item.id == this.$route.query.id.split('-')[0] )[0]
+			this.headerTitl = this.$route.query.id.split('-')[1] ? checkedData.children.filter(item => item.id == this.$route.query.id)[0].titl : checkedData.titl
+		}
 	},
   methods: {
 	  showAsideClick() {

@@ -61,7 +61,7 @@ export default {
 			})
 		)
 		this.detailData = this.indexJson.filter(item => item.id == this.$route.query.id)[0]
-		console.log(this.detailData)
+		// console.log(this.detailData)
 		// this.linkTo = compObj['linkTo']
 		// this.detailTitl = compObj.titl
 		// this.update = compObj.update
