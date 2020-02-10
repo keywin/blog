@@ -5,13 +5,14 @@
 		background: rgba(255,255,255,.5);
 		transition: all .3s;
 		.titl{
-			position: relative;
-			height: 1.12rem;
-			line-height: .92rem;
-			text-align: center;
-			font-size: .4rem;
-			font-weight: 700;
-			color: #000;
+			display: none;
+			// position: relative;
+			// height: 1.12rem;
+			// line-height: .92rem;
+			// text-align: center;
+			// font-size: .4rem;
+			// font-weight: 700;
+			// color: #000;
 		}
 		.imgFoo{
 			max-height: 8rem;

@@ -7,7 +7,7 @@
 			<audio  controls autoplay class="mt30" id="audio" ref="audio" :src="detailData.source.url" type="audio/mp3" />
 		</div>
 		<div class="imgFoo img_titl mt30" style="max-height: fit-content;">
-			<img src="http://q4ujnj8md.bkt.clouddn.com/xxt_08.png" width="100%" height="100%" alt="">
+			<img src="http://q4ujnj8md.bkt.clouddn.com/xxt_08.webp" width="100%" height="100%" alt="">
 		</div>
 		<div class="detailCont">
 			<p class="mt30">一直对老房子老物件感兴趣</p>
