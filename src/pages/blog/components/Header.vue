@@ -7,8 +7,10 @@
   <div class="header z-shadow">
 		<!-- <p class="search"></p> -->
 		<div class="box">
+			<p class="goBack" @click="goBackClick" v-if="isShowBack"></p>
 			<h2>
-				<img src="http://q4ujnj8md.bkt.clouddn.com/微信图片_20200116111632.778db02.png" alt="" class="l">
+				<div class="titl-cont ellipsis" v-if="isShowBack">{{ headerTitl }}</div>
+				<img src="http://q4ujnj8md.bkt.clouddn.com/微信图片_20200116111632.778db02.png" alt="" class="l" v-if="!isShowBack">
 				<img src="http://q4ujnj8md.bkt.clouddn.com/logo.png" alt="" class="r" @click="goHome()">
 			</h2>
 			<ul class="navList">
@@ -24,6 +26,8 @@ export default {
   name: "Header",
   data() {
     return {
+			headerTitl: '老友记',
+			isShowBack: false,
 			listData,
 			checkedId: '-1',
 		};
@@ -31,6 +35,7 @@ export default {
   props: [],
   watch: {
 		$route () {
+			this.isShowBack = this.$route.meta.isShowBack
 			this.checkedId = this.$route.query.id ? this.$route.query.id.split('-')[0] : '-1'
     }
 	},
@@ -39,11 +44,19 @@ export default {
 		
 	},
   created() {
+		this.isShowBack = this.$route.meta.isShowBack
 		this.checkedId = this.$route.query.id ? this.$route.query.id.split('-')[0] : '-1'
+		this.headerTitl = this.listData.filter(item => {
+				item.id == this.$route.query.id
+			})
+			console.log(this.headerTitl)
 	},
   methods: {
 	  showAsideClick() {
 		  this.$store.commit('CHANGE_AISDESTATE', true)
+		},
+		goBackClick() {
+			this.$router.go(-1)
 		},
 		navClick(id) {
 			if(this.$route.query.id == id) return
@@ -91,11 +104,27 @@ export default {
 			background: url('~@/assets/img/icon/more.svg') no-repeat center;
 			background-size: 100%;
 		}
+		.goBack{
+			width: .6rem;
+			height: .6rem;
+			position: absolute;
+			top: .34rem;
+			left: .16rem;
+			background: url('~@/assets/img/icon/icon_back.png') no-repeat center;
+			background-size: 70%;
+		}
 		h2{
 			width: 5rem;
 			height: 1rem;
 			margin: 0 auto;
 			padding-top: .2rem;
+			.titl-cont{
+				line-height: 1rem;
+				text-align: center;
+				font-size: .38rem;
+				font-weight: bold;
+				color: #000;
+			}
 			.l{
 				width: 100%;
 				height: 100%;
@@ -118,6 +147,9 @@ export default {
 			align-items: center;
 			max-width: 960px;
 			margin: 0 auto;
+			.goBack, .titl-cont{
+				display: none;
+			}
 			.navList{
 				li{
 					display: inline-block;

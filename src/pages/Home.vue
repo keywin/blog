@@ -58,28 +58,13 @@ export default {
 	z-index: 1;
   overflow-x: hidden;
 }
-.goBack{
-  position: fixed;
-  transform: rotate(180deg);
-  color: #000;
-  border-radius: 50%;
-  background: url(~@/assets/img/icon/icon_arrow.png) center no-repeat rgba(255,255,255,.5);
-  background-size: 70%;
-  box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
-  z-index: 99;
-}
 /* 小屏 */
 @media only screen and (max-width: 600px) {
   .home{
     margin-top: 1.28rem;
   }
   .goBack{
-    width: .5rem;
-    height: .5rem;
-    right: .6rem;
-    bottom: .6rem;
-    padding: .3rem;
-    font-size: .4rem;
+    display: none;
   }
 }
 /* 大屏 */
@@ -91,8 +76,16 @@ export default {
     margin-top: 64px;
   }
   .goBack{
+    position: fixed;
     right: 30px;
     bottom: 30px;
+    transform: rotate(180deg);
+    border-radius: 50%;
+    color: #000;
+    background: url(~@/assets/img/icon/icon_arrow.png) center no-repeat rgba(255,255,255,.5);
+    background-size: 70%;
+    box-shadow: 0 0 4px 1px rgba(113, 135, 164, 0.12);
+    z-index: 99;
     padding: 20px;
     font-size: 20px;
     cursor: pointer;
