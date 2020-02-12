@@ -1,6 +1,11 @@
 <template>
   <div class="detail detail_col">
 		<h3 class="titl">{{ detailData.titl }}</h3>
+		<div class="music-bar" @click="musicCtro">
+			<i class="music-icon" :class="{'pause': is_musicPlayed}"></i>
+			<span class="music-desc">{{ detailData.source.desc }}</span>
+			<audio  controls autoplay class="mt30" id="audio" ref="audio" :src="detailData.source.url" type="audio/mp3" />
+		</div>
 		<div class="detailCont">
 			<p class="mt30 tx-c">宫崎骏，是我最喜欢的日本动画师、动画制作人、漫画家、动画导演、动画编剧。</p>
 			<p class="mt30 tx-c">日漫由岸本齐史入门, 因宫崎骏而热爱。</p>
