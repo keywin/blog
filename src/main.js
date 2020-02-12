@@ -53,10 +53,10 @@ router.beforeEach((to, from, next) => {
     spinner: 'el-icon-loading',
     background: 'rgba(0, 0, 0, 0.7)'
   });
-  window.scrollTo(0, 0);
   next()
 })
 router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0);
   loading.close()
 });
 
