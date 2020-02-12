@@ -5,22 +5,14 @@ import App from './App'
 import router from './router'	
 import store from './store/index'
 
-import Bus from './bus/index'
+// import Bus from './bus/index'
 
-import zLoading from './packages/loading'
-// console.log(zLoading)
+// import zLoading from './packages/loading'
+
 Vue.use(zLoading)
 
 import { http_axios } from '@/api/httpAxios.js'
 Vue.prototype.$axios = http_axios
-
-// import hljs from 'highlight.js' //导入代码高亮文件
-// import 'highlight.js/styles/a11y-dark.css'
-
-// import { RadioGroup, Radio } from 'element-ui';
-// import 'element-ui/lib/theme-chalk/index.css';
-// Vue.use(RadioGroup);
-// Vue.use(Radio);
 
 import { Loading, Scrollbar } from 'element-ui';
 // import 'element-ui/lib/theme-chalk/index.css';
@@ -35,14 +27,6 @@ Vue.use(Scrollbar)
 Vue.config.productionTip = false
 
 Vue.prototype.$bus = Bus
-
-// //自定义一个代码高亮指令
-// Vue.directive('highlight',function (el) {
-//   let highlight = el.querySelectorAll('pre code');
-//   highlight.forEach((block)=>{
-//       hljs.highlightBlock(block)
-//   })
-// })
 
 // 前置守卫, 没有后台, 有些组件需要解析大量代码会慢, 加载等待
 let loading = ''
