@@ -8,7 +8,7 @@
 		<!-- <h3 class="ul-title">夕朝<br />拾花</h3> -->
 		<h3 class="ul-title">{{ listData.titl }}</h3>
 		<ul class="itemList_UL">
-			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated">
+			<li v-for="(item, i) in listData.children" :key="i" class="list-item fadeIn animated" @click="goDetail(item.linkToid)">
 				<i class="z-tag">公告</i>
 				<span class="list-cont ellipsis">{{ item.titl }}</span>
 				<span class="list-date">{{ item.update }}</span>
@@ -33,6 +33,14 @@ export default {
 	  goListPage(id) {
 		  this.$router.push({path: '/blog/listpages', query: {id}})
 		},
+		// 进入详情页
+		goDetail(linkToid) {
+			if (!linkToid) return
+			this.$router.push({
+				path: '/blog/detail_col',
+				query: {id: linkToid}
+			})
+		}
 	},
   mounted() {
 		

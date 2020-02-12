@@ -108,11 +108,11 @@
         "titl": "情报更新",
         "id": "6",
         "children": [
-            { "titl": "优化滚动条样式, swiper传送门", "id": "6-1", "linkTo": "aaa", "update": "2020-2-12", "type": "更新", "isShowIndex": true },
-            { "titl": "对页面ui进行改版,添加了一些详情页", "id": "6-2", "linkTo": "aaa", "update": "2020-2-5", "type": "更新", "isShowIndex": true },
-            { "titl": "优化了一些图片", "id": "6-3", "linkTo": "aaa", "update": "2020-2-4", "type": "更新", "isShowIndex": true },
-            { "titl": "夏目友人帐", "id": "6-4", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": true },
-            { "titl": "宫崎骏系列", "id": "6-5", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": false }
+            { "titl": "增加宫崎骏相关详情页, 情报可点击", "id": "6-1", "linkTo": "", "linkToid": "5-4", "update": "2020-2-12", "type": "更新", "isShowIndex": true },
+            { "titl": "优化滚动条样式, swiper传送门", "id": "6-2", "linkTo": "", "update": "2020-2-12", "type": "更新", "isShowIndex": true },
+            { "titl": "对页面ui进行改版,添加了一些详情页", "id": "6-3", "linkTo": "", "update": "2020-2-5", "type": "更新", "isShowIndex": true },
+            { "titl": "优化了一些图片", "id": "6-4", "linkTo": "", "update": "2020-2-4", "type": "更新", "isShowIndex": true },
+            { "titl": "夏目友人帐", "id": "6-5", "linkTo": "", "update": "1970-1-1", "type": "更新", "isShowIndex": true }
         ]
     },
     {
