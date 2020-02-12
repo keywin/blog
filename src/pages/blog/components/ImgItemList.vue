@@ -18,7 +18,7 @@
 				</div>
 			</li>
 		</ul>
-		<div class="more" @click="goListPage(listData.id)">查看更多>></div>
+		<div class="more" @click="goListPage(listData.id)">列表页>></div>
 	</div>
 </template>
 <script>

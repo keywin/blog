@@ -34,24 +34,24 @@
         ]
     },
     {
-        "titl": "工具类",
+        "titl": "工具",
         "id": "3",
         "children": [
-            { "titl": "Https://github.com", "id": "3-1", "linkTo": "https://github.com",
+            { "titl": "Https://github.com", "id": "3-1", "linkTo": "Github",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/github.jpg",
                 "scription": "GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等",
                 "isShowIndex": true, "type": "工具"
             },
-            { "titl": "TortoiseSVN", "id": "3-2", "linkTo": "aaa", "update": "1970-1-1" },
-            { "titl": "Git配置及基础命令", "id": "3-3", "linkTo": "aaa", "update": "1970-1-1",
+            { "titl": "TortoiseSVN", "id": "3-2", "linkTo": "TortoiseSVN", "update": "1970-1-1" },
+            { "titl": "Git配置及基础命令", "id": "3-3", "linkTo": "Gitconfig", "update": "1970-1-1",
                 "scription": "主要描述了一些git常用基础命令, 用作学习交流使用, 入有错误或好的建议, 欢迎指正",
                 "isShowIndex": true, "type": "工具"
             },
-            { "titl": "Hbuilder打包", "id": "3-4", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
-            { "titl": "Hbuilder快捷键", "id": "3-5", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
-            { "titl": "Vscode快捷键", "id": "3-6", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
-            { "titl": "Vscode常用插件", "id": "3-7", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" },
-            { "titl": "Markdown语法", "id": "3-8", "linkTo": "aaa", "update": "1970-1-1", "type": "工具" }
+            { "titl": "Hbuilder打包", "id": "3-4", "linkTo": "Hbuilder", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Hbuilder快捷键", "id": "3-5", "linkTo": "HbuilderKjj", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Vscode快捷键", "id": "3-6", "linkTo": "VscodeKjj", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Vscode常用插件", "id": "3-7", "linkTo": "Vscode", "update": "1970-1-1", "type": "工具" },
+            { "titl": "Markdown语法", "id": "3-8", "linkTo": "Markdown", "update": "1970-1-1", "type": "工具" }
         ]
     },
     {
@@ -62,8 +62,8 @@
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/defaultCover2.d1bd5b4.png",
                 "isShowIndex": true, "type": "文学"
             },
-            { "titl": "共病文库", "id": "4-2", "linkTo": "aaa", "update": "1970-1-1",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767.gif",
+            { "titl": "共病文库", "id": "4-2", "linkTo": "Pig", "update": "1970-1-1",
+                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767v1.gif",
                 "isShowIndex": true, "type": "文学"
             },
             { "titl": "凡是过往，皆为序章", "id": "4-3", "linkTo": "Formerly", "update": "2020-2-2",
@@ -86,21 +86,21 @@
         "titl": "动漫",
         "id": "5",
         "children": [
-            { "titl": "火影忍者", "id": "5-1", "linkTo": "aaa", "update": "1970-1-1",
+            { "titl": "NARUTO -ナルト-", "id": "5-1", "linkTo": "Naruto", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/naruto.gif"
             },
-            { "titl": "我想吃掉你的胰脏", "id": "5-2", "linkTo": "aaa", "update": "1970-1-1",
+            { "titl": "君の膵臓をたべたい", "id": "5-2", "linkTo": "EatYourPancreas", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
                 "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/eat_01.jpg"
             },
-            { "titl": "夏目友人帐", "id": "5-3", "linkTo": "aaa", "update": "1970-1-1",
+            { "titl": "夏目友人帳", "id": "5-3", "linkTo": "NatsumeYuujinchou", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/xmyrz.gif"
+                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/xmyrzv1.gif"
             },
-            { "titl": "宫崎骏系列", "id": "5-4", "linkTo": "aaa", "update": "1970-1-1",
+            { "titl": "Miyazaki Hayao みやざき はやお", "id": "5-4", "linkTo": "Gqj", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/gqj.gif"
+                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/gqjv1.gif"
             }
         ]
     },
@@ -108,10 +108,11 @@
         "titl": "情报更新",
         "id": "6",
         "children": [
-            { "titl": "对页面ui进行改版,添加了一些详情页", "id": "6-1", "linkTo": "aaa", "update": "2020-2-5", "type": "更新", "isShowIndex": true },
-            { "titl": "优化了一些图片", "id": "6-2", "linkTo": "aaa", "update": "2020-2-4", "type": "更新", "isShowIndex": true },
-            { "titl": "夏目友人帐", "id": "6-3", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": true },
-            { "titl": "宫崎骏系列", "id": "6-4", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": true }
+            { "titl": "优化滚动条样式, swiper传送门", "id": "6-1", "linkTo": "aaa", "update": "2020-2-12", "type": "更新", "isShowIndex": true },
+            { "titl": "对页面ui进行改版,添加了一些详情页", "id": "6-2", "linkTo": "aaa", "update": "2020-2-5", "type": "更新", "isShowIndex": true },
+            { "titl": "优化了一些图片", "id": "6-3", "linkTo": "aaa", "update": "2020-2-4", "type": "更新", "isShowIndex": true },
+            { "titl": "夏目友人帐", "id": "6-4", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": true },
+            { "titl": "宫崎骏系列", "id": "6-5", "linkTo": "aaa", "update": "1970-1-1", "type": "更新", "isShowIndex": false }
         ]
     },
     {

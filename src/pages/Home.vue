@@ -8,9 +8,9 @@
     <kwHeade></kwHeade>
     <kw-aside :isShowAside="isShowAside" class="isShowAside"></kw-aside>
     <div class="goBack" @click="goBackClick" v-if="isShowBack"></div>
-		<transition name="fade" appear>
-			<router-view />
-		</transition>
+    <transition name="el-fade-in-linear" appear>
+      <router-view />
+    </transition>
     <!-- <zLoading></zLoading> -->
 	</div>
 </template>
@@ -53,6 +53,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+/deep/ .el-scrollbar__wrap{
+  overflow-x: hidden;
+}
 .home{
 	position: relative;
 	z-index: 1;
@@ -91,10 +94,10 @@ export default {
     cursor: pointer;
   }
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
+// .fade-enter-active, .fade-leave-active {
+//   transition: opacity .5s;
+// }
+// .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+//   opacity: 0;
+// }
 </style>

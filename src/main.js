@@ -22,7 +22,7 @@ Vue.prototype.$axios = http_axios
 // Vue.use(RadioGroup);
 // Vue.use(Radio);
 
-import { Loading, Select } from 'element-ui';
+import { Loading, Scrollbar } from 'element-ui';
 // import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(Loading)
 
@@ -30,6 +30,7 @@ Vue.use(Loading)
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
 Vue.use(Viewer)
+Vue.use(Scrollbar)
 
 Vue.config.productionTip = false
 

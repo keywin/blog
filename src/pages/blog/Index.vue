@@ -4,20 +4,20 @@
 -- @script: blog-index
 -->
 <template>
-  <div class="blog">
+  <div class="blog scrollbarFoo">
 		<!-- <kwHeade></kwHeade> -->
 		<!-- 大屏 -->
 		<swiper :options="swiperOptionMax" class="swiperOptionMax">
-			<swiper-slide v-for="(item, i) in swiperImg" :key="i">
-				<img :src="item.img" alt="" width="100%" height="100%" style="object-fit: cover;">
+			<swiper-slide v-for="item in swiperImg" :key="item.id">
+				<img :src="item.img" alt="" width="100%" height="100%" style="object-fit: cover;" @click="goListPage(item.id)" class="hand">
 			</swiper-slide>
 			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
 		<!-- 小屏 -->
 		<div class="swiperFoo">
 			<swiper :options="swiperOptionMin" class="swiperOptionMin">
-				<swiper-slide v-for="(item, i) in swiperImg" :key="i">
-					<img :src="item.img" alt="" width="100%" height="100%" style="object-fit: cover;">
+				<swiper-slide v-for="item in swiperImg" :key="item.id">
+					<img :src="item.img" alt="" width="100%" height="100%" style="object-fit: cover;" @click="goListPage(item.id)">
 				</swiper-slide>
 				<div class="swiper-pagination" slot="pagination"></div>
 			</swiper>
@@ -43,6 +43,7 @@ import kwImgItemList from '@/pages/blog/components/ImgItemList'
 import kwTxtItemList from '@/pages/blog/components/TxtItemList'
 
 import indexJson from "@/assets/json/blog/index.json"
+import swiperImg from "@/assets/json/blog/swiper.json"
 export default {
   name: "Blog",
   data() {
@@ -59,7 +60,8 @@ export default {
 				},
 				pagination: {
 					el: '.swiper-pagination', // 分页
-				}
+					clickable :true
+				},
 			},
 			swiperOptionMin: {
 				slidesPerView : 1, // 显示两张
@@ -74,33 +76,8 @@ export default {
 					el: '.swiper-pagination', // 分页
 				}
 			},
-			swiperImg: [
-				{
-					txt: '123',
-					img: 'http://q4ujnj8md.bkt.clouddn.com/42166d224f4a20a49de25e8d98529822730ed0f8.jpg'
-				},
-				{
-					txt: '123',
-					img: 'http://q4ujnj8md.bkt.clouddn.com/php.png'
-				},
-				{
-					txt: '123',
-					img: 'http://q4ujnj8md.bkt.clouddn.com/git_03.jpg'
-				},
-				{
-					txt: '123',
-					img: 'http://q4ujnj8md.bkt.clouddn.com/riji.png'
-				},
-				{
-					txt: '123',
-					img: 'http://q4ujnj8md.bkt.clouddn.com/eat_02.jpg'
-				},
-				{
-					txt: '123',
-					img: 'http://q4ujnj8md.bkt.clouddn.com/news.jpg'
-				}
-			],
-			swiperSlides: [1, 2, 3, 4, 5, 6],
+			swiperImg,
+			swiperSlides: [],
 			isShowAside: false,
 			indexJson1: indexJson.slice(0, 3),
 			indexJson2: indexJson.slice(3, 5),
@@ -121,8 +98,21 @@ export default {
 		kwImgItemList,
 		kwTxtItemList
 	},
-  created() {},
-  methods: {},
+  created() {
+		this.swiperSlides = this.swiperImg.map((item, index) => index + 1)
+	},
+  methods: {
+		// 进入列表页
+	  goListPage(id) {
+			this.$router.push({path: '/blog/listpages', query: {id}})
+		},
+		on_bot_enter() {
+			this.swiperOption.autoplay.stop()
+		},
+		on_bot_leave() {
+			this.swiperOption.autoplay.start()
+		},
+	},
   mounted() {
 	},
   updated() {},
