@@ -3,11 +3,13 @@
         "titl": "前端",
         "id": "1",
         "children": [
-            { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-1-27", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/vuex.png",
+            { "titl": "Vuex及模块化", "id": "1-1", "linkTo": "Vuex", "update": "2020-1-27", "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/vuex.png",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8eGLvR.png",
                 "scription": "由于使用单一状态树，应用的所有状态会集中到一个比较大的对象。当应用变得非常复杂时，store 对象就有可能变得相当臃肿。为了解决以上问题，Vuex 允许我们将 store 分割成模块（module）。每个模块拥有自己的 state、mutation、action、getter。",
                 "isShowIndex": true, "type": "code"
             },
-            { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "Axios", "update": "2020-2-2", "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/axios.png",
+            { "titl": "Axios封装及拦截器、状态管理", "id": "1-2", "linkTo": "Axios", "update": "2020-2-2", "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/axios.png",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8ZfAmV.png",
                 "scription": "vue项目开发时，为了对请求的数据做统一处理，如加loading，以及请求消息提示提示等，需要对vue配套的axios进行二次封装",
                 "isShowIndex": true, "type": "code"
             },
@@ -38,7 +40,8 @@
         "id": "3",
         "children": [
             { "titl": "Https://github.com", "id": "3-1", "linkTo": "Github",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/github.jpg",
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/github.jpg",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8ZfGTO.jpg",
                 "scription": "GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等",
                 "isShowIndex": true, "type": "工具"
             },
@@ -59,16 +62,18 @@
         "id": "4",
         "children": [
             { "titl": "开始写博客", "id": "4-1", "linkTo": "OpenBlog", "update": "2020-1-16",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/defaultCover2.d1bd5b4.png",
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/defaultCover2.d1bd5b4.png",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8ZfekF.png",
                 "isShowIndex": true, "type": "文学"
             },
             { "titl": "共病文库", "id": "4-2", "linkTo": "Pig", "update": "1970-1-1",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767v1.gif",
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/8f0ad96bc52c62064127439cc6244767v1.gif",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8eGk7T.gif",
                 "isShowIndex": true, "type": "文学"
             },
             { "titl": "凡是过往，皆为序章", "id": "4-3", "linkTo": "Formerly", "update": "2020-2-2",
-                "isShowIndex": true, "type": "文学",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/rain.gif", "source": {
+                "isShowIndex": true, "type": "文学", "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/rain.gif",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8eUtX9.jpg", "source": {
                     "url": "http://q4ujnj8md.bkt.clouddn.com/189628679.mp3",
                     "desc": "Yesterday Once More"
                 }
@@ -88,19 +93,22 @@
         "children": [
             { "titl": "NARUTO -ナルト-", "id": "5-1", "linkTo": "Naruto", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/naruto.gif"
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/naruto.gif",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8ZfhXq.gif"
             },
             { "titl": "君の膵臓をたべたい", "id": "5-2", "linkTo": "EatYourPancreas", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/eat_01.jpg"
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/eat_01.jpg",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8ZfnfJ.jpg"
             },
             { "titl": "夏目友人帳", "id": "5-3", "linkTo": "NatsumeYuujinchou", "update": "1970-1-1",
                 "isShowIndex": true, "type": "爱好",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/xmyrzv1.gif"
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/xmyrzv1.gif",
+                "imgUrl": "https://s1.ax1x.com/2020/03/12/8eYylj.gif"
             },
             { "titl": "Miyazaki Hayao みやざき はやお", "id": "5-4", "linkTo": "Gqj", "update": "2020-2-12",
                 "isShowIndex": true, "type": "爱好",
-                "imgUrl": "http://q4ujnj8md.bkt.clouddn.com/gqjv1.gif", "source": {
+                "imgUrl_qn": "http://q4ujnj8md.bkt.clouddn.com/gqjv1.gif", "imgUrl": "https://s1.ax1x.com/2020/03/12/8ZfDnP.gif", "source": {
                     "url": "http://q4ujnj8md.bkt.clouddn.com/gqj_qyqx.mp3",
                     "desc": "伊藤サチコ - いつも何度でも"
                 }

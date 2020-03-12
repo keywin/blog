@@ -10,8 +10,10 @@
 			<p class="goBack" @click="goBackClick" v-if="isShowBack"></p>
 			<h2>
 				<div class="titl-cont ellipsis" v-if="isShowBack">{{ headerTitl }}</div>
-				<img src="http://q4ujnj8md.bkt.clouddn.com/微信图片_20200116111632.778db02.png" alt="" class="l" v-if="!isShowBack">
-				<img src="http://q4ujnj8md.bkt.clouddn.com/logo.png" alt="" class="r" @click="goHome()">
+				<!-- <img src="http://q4ujnj8md.bkt.clouddn.com/微信图片_20200116111632.778db02.png" alt="" class="l" v-if="!isShowBack"> -->
+				<img src="https://s1.ax1x.com/2020/03/12/8e8AWd.png" alt="" class="l" v-if="!isShowBack">
+				<!-- <img src="http://q4ujnj8md.bkt.clouddn.com/logo.png" alt="" class="r" @click="goHome()"> -->
+				<img src="https://s1.ax1x.com/2020/03/12/8Zffcn.png" alt="" class="r" @click="goHome()">
 			</h2>
 			<ul class="navList">
 				<li v-for="item in listData" :key="item.id" @click="navClick(item.id)" :class="{'active': checkedId == item.id}">{{item.titl}}</li>
